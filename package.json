@@ -2,6 +2,8 @@
   "name": "boutme",
   "version": "0.1.0",
   "private": true,
+  "author": "coyo-hm",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
