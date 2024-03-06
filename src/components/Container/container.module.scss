@@ -1,0 +1,73 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	display: block;
+	overflow: hidden;
+}
+
+.content {
+	overflow: auto;
+	height: 100vh;
+	width: 100%;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgb(255, 255, 255, 0.8);
+		border-radius: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: rgb(0, 0, 0, 0);
+	}
+}
+
+.shape {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+
+.random-shape:after {
+	//font-family: FontAwesome;
+	content: "\f005";
+}
+
+$circle-size: 100px;
+$colors: #ffd700, #fff8dc, #db7093, #c2b7fe, #95a9ff;
+$shapes: "\f005", "\f0c8", "\f1db", "\f096", "\f1d8", "\f1cb";
+$shape-count: 50;
+
+@for $i from 1 through $shape-count {
+	$shape-size: random(10);
+	$rotation: random(360);
+	$speed: 40 + random(10);
+	$color-key: random(length($colors));
+	$shape-color: nth($colors, $color-key);
+	$shape-key: random(length($shapes));
+	$shape-type: nth($shapes, $shape-key);
+	$text: random(10);
+
+	@keyframes shape-#{$i} {
+		0% {
+			transform: translate3d(0, 0, 0) rotate(#{$rotation + 0}deg);
+		}
+		100% {
+			transform: translate3d(0, 0, 0) rotate(#{$rotation + 360}deg);
+		}
+	}
+
+	.shape-container--#{$i} {
+		animation: shape-#{$i} #{$speed}s linear infinite;
+
+		.random-shape:after {
+			margin: #{$shape-size}rem;
+			color: $shape-color;
+			font-size: #{$shape-size * 0.2}rem;
+			content: $shape-type;
+		}
+	}
+}
