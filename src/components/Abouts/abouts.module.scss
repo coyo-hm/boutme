@@ -1,4 +1,5 @@
 @import "src/styles";
+@import "src/styles/screen";
 
 .abouts {
 	width: 100%;
@@ -10,8 +11,13 @@
 
 	& > div {
 		display: grid;
-		grid-template-areas: "title title" "birth description" "mail description" "link1 description" "link2 description";
+		grid-template-areas: "title title" "birth mail" "link1 link2" "description description" "description description";
+
 		gap: 15px;
+
+		@include desktop {
+			grid-template-areas: "title title" "birth description" "mail description" "link1 description" "link2 description";
+		}
 	}
 }
 
@@ -66,7 +72,6 @@
 		transform: translateY(-0.2rem);
 		transition: all 0.3s ease-in-out;
 	}
-
 }
 
 .link1 {
@@ -79,7 +84,7 @@
 	grid-area: link2;
 }
 
-.github{
+.github {
 	& > * {
 		color: #667eea;
 	}
@@ -98,5 +103,11 @@
 		white-space: pre-line;
 		font-size: 1.25rem;
 		line-height: 1.85rem;
+	}
+
+	@include mobile {
+		li {
+			font-size: 1rem;
+		}
 	}
 }

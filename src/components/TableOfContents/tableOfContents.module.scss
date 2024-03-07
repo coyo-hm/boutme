@@ -1,3 +1,5 @@
+@import "src/styles/screen";
+
 .tableOfContents {
 	position: absolute;
 	top: 50%;
@@ -29,6 +31,10 @@
 		color: transparent;
 		background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 		font-size: 1rem;
+	}
+
+	@include mobile {
+		display: none;
 	}
 }
 
