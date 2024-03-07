@@ -5,6 +5,7 @@ import Skills from "@components/Skills"
 import Projects from "@components/Projects"
 import Careers from "@components/Careers"
 import Activities from "@components/Activities"
+import Footer from "@components/Footer";
 
 export default function Main() {
 	return (
@@ -15,6 +16,7 @@ export default function Main() {
       <Projects/>
 			<Careers/>
 			<Activities/>
+			<Footer/>
 		</Container>
 	)
 }

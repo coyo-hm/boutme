@@ -1,7 +1,13 @@
 import Link from "next/link";
-import styles from "./tableOfContents.module.scss"
+import styles from "./tableOfContents.module.scss";
+import IconArrow from "@assets/arrow.svg";
 
-const LINKS = ["home", "abouts", "skills", "projects", "careers", "activities"];
+const LINKS = [
+	"abouts",
+	"skills",
+	"projects"
+	// , "careers", "activities"1
+];
 
 export default function TableOfContents() {
 	const onUp = () => {
@@ -14,15 +20,21 @@ export default function TableOfContents() {
 	};
 	return (
 		<div className={styles.tableOfContents}>
-			{/*<button onClick={onUp}>up</button>*/}
-			<ul>
-				{LINKS.map(id => (
-					<li key={id}>
-						<Link href={`#${id}`} >{id}</Link>
-					</li>
-				))}
-			</ul>
-			{/*<button onClick={onDown}>down</button>*/}
+			<div>
+				<Link href={"#home"}>
+					<IconArrow width={24} className={styles.up} />
+				</Link>
+				<ul>
+					{LINKS.map(id => (
+						<li key={id}>
+							<Link href={`#${id}`}>{id}</Link>
+						</li>
+					))}
+				</ul>
+				<Link href={"#footer"}>
+					<IconArrow width={24} className={styles.down} />
+				</Link>
+			</div>
 		</div>
 	);
 }

@@ -90,6 +90,12 @@
 	grid-area: link2;
 }
 
+.github{
+	& > * {
+		color: #667eea;
+	}
+}
+
 .description {
 	@extend .box;
 	grid-area: description;
