@@ -53,7 +53,7 @@ export default function Skills() {
 					</h1>
 					<ul>
 						<li>NextJs를 통해 SSG 사이트를 생성한 경험이 있습니다. </li>
-						<li>지금 이 포토폴리오와 블로그 모두 NextJs를로 만들어진 사이트 입니다.</li>
+						<li>지금 이 포토폴리오와 블로그 모두 NextJs로 만들어진 사이트 입니다.</li>
 					</ul>
 				</div>
 				<div className={styles.javaScript}>
