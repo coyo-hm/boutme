@@ -7,7 +7,6 @@
 	align-items: center;
 
 	& > div {
-		width: 80%;
 		display: grid;
 		grid-template-areas: "title title" "birth description" "mail description" "link1 description" "link2 description";
 		gap: 15px;
@@ -78,6 +77,7 @@
 		transform: translateY(-0.2rem);
 		transition: all 0.3s ease-in-out;
 	}
+
 }
 
 .link1 {

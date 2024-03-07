@@ -19,10 +19,9 @@ export default function Container({ children }: { children: React.ReactNode }) {
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.shape} ref={shapeRef}>
-				<div className={styles.content}>{children}</div>
-				<TableOfContents />
-			</div>
+			<div className={styles.content}>{children}</div>
+			<TableOfContents />
+			{/*<div className={styles.shape} ref={shapeRef}/>*/}
 		</div>
 	);
 }

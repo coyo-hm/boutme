@@ -24,7 +24,7 @@ export default function Abouts() {
 					<span>BLOG</span>
 				</Link>
 				<Link className={styles.link2} href={"https://github.com/coyo-hm"} target={"_blank"} rel="noreferrer">
-					<IconGithub width={24} height={24} className={"text-[#667eea]"} />
+					<IconGithub width={24} height={24} />
 					<span>GITHUB</span>
 				</Link>
 				<ul className={styles.description}>
