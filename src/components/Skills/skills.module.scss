@@ -4,24 +4,127 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
 
-	& > div {
-		position: relative;
-		width: 80%;
-		//display: grid;
-		gap: 15px;
-		background-color: rgba(0, 0, 0, 0.6);
-      box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
-		border-radius: 10px;
-		padding: 30px 20px 20px;
-	}
+.content {
+	position: relative;
+	display: grid;
+	grid-template-areas: "react react""nextjs nextjs" "javaScript typeScript" "css css" "tools tools";
+	gap: 1.5rem 2rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	padding: 2rem 1.5rem 1.5rem;
 }
 
 .title {
-  position: absolute;
-  top: -2rem;
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  text-shadow: 5px 5px 0 rgba(#95a9ff, 0.6);
+	position: absolute;
+	top: -2rem;
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	text-shadow: 5px 5px 0 rgba(#95a9ff, 0.6);
+}
+
+.subtitle {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
+	font-weight: 700;
+	gap: 10px;
+
+	img {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+
+	svg {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+}
+
+@mixin skill($themeColor) {
+	h1 {
+		@extend .subtitle;
+		color: $themeColor;
+	}
+	ul {
+		padding: 0 0 0 20px;
+	}
+
+	li {
+		list-style-type: disc;
+		list-style-position: outside;
+		word-break: keep-all;
+		white-space: pre-line;
+	}
+
+	.highlights {
+		color: rgb(4, 182, 246);
+		color: rgb(14, 165, 233);
+	}
+}
+
+.react {
+	@include skill(rgb(4, 182, 246));
+	grid-area: react;
+}
+
+.nextjs {
+	@include skill(rgb(255, 255, 255));
+	grid-area: nextjs;
+}
+
+.javaScript {
+	@include skill(rgb(238, 215, 33));
+	grid-area: javaScript;
+}
+
+.typeScript {
+	@include skill(rgb(49, 117, 191));
+	grid-area: typeScript;
+}
+
+.css {
+	@include skill(rgb(39, 75, 220));
+	grid-area: css;
+}
+
+.tools {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	grid-area: tools;
+
+	h1 {
+		@extend .subtitle;
+		width: 100%;
+		color: #cbcbc9;
+
+		svg > * {
+			color: #cbcbc9;
+		}
+	}
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+
+	svg {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	img {
+		width: 2rem;
+		height: 2rem;
+	}
 }

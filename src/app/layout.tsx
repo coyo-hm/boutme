@@ -7,8 +7,8 @@ import "@styles/globals.css";
 const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "COYO's Portfolio",
-	description: ""
+	title: "Dayeon's Portfolio",
+	description: "FE 개발자 윤다연의 포토폴리오입니다!"
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="ko">
 			<body className={font.className}>
 				{children}
 			</body>
