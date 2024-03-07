@@ -8,7 +8,10 @@ const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Dayeon's Portfolio",
-	description: "FE 개발자 윤다연의 포토폴리오입니다!"
+	description: "FE 개발자 윤다연의 포토폴리오입니다!",
+	icons:{
+		icon:"./favicon.ico"
+	}
 };
 
 export default function RootLayout({
