@@ -80,7 +80,7 @@ export default function Projects() {
 			links: [
 				{
 					type: "storybook",
-					url: "https://65ae91d7cdf7712a838d310c-qjylmelyrm.chromatic.com/?path=/docs/docs-introduction--docs"
+					url: "https://main--65ae91d7cdf7712a838d310c.chromatic.com/"
 				},
 				{
 					type: "git",
