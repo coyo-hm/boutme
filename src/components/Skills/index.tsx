@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./skills.module.scss";
 
@@ -17,7 +18,6 @@ import LogoSlack from "@assets/slack.png";
 import LogoNotion from "@assets/notion.webp";
 import LogoFigma from "@assets/figma.png";
 import LogoStorybook from "@assets/storybook.svg";
-import Link from "next/link";
 
 export default function Skills() {
 	const SKILLS_LIST = [
@@ -36,7 +36,7 @@ export default function Skills() {
 			label: "React",
 			description: [
 				"실무에서 React를 이용해 설계부터 배포, VOC 대응까지 진행해본 경험이 있습니다.",
-				"Redux, RTK, Recoil 등 다양한 상태 관리 라이브러리 사용 경험이 있습니다.",
+				"Redux, RTK, Recoil 등 다양한 상태 관리 라이브러리 사용 경험이 있습니다."
 			]
 		},
 		{
@@ -83,8 +83,7 @@ export default function Skills() {
 					<span className={"text-[#0EA5E9] font-semibold"}>tailwind</span> 등 다양한 css 사용 경험이 있습니다.
 				</>,
 				<>
-					{" "}
-					실무에서는 <span className={"text-[#C66395FF] font-semibold"}>scss</span>와
+					실무에서는 <span className={"text-[#C66395FF] font-semibold"}>scss</span>와{" "}
 					<span className={"text-[#BF4F74] font-semibold"}>styled-components</span>,{" "}
 					<span className={"text-[#E2F0FF] font-semibold"}>less</span>를 주로 사용하였습니다.
 				</>,
@@ -111,9 +110,11 @@ export default function Skills() {
 	];
 
 	return (
-		<div id={"skills"} className={styles.skills}>
+		<div className={styles.skills} id={"skills"}>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Skills</h1>
+				<h1  className={styles.title}>
+					Skills
+				</h1>
 				{SKILLS_LIST.map(({ key, icon, label, description }) => (
 					<div className={styles[key]} key={key}>
 						<h1>
