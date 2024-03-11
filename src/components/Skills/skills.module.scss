@@ -11,7 +11,7 @@
 .content {
 	position: relative;
 	display: grid;
-	grid-template-areas: "react react" "nextjs nextjs" "javaScript typeScript" "css css" "tools tools";
+	grid-template-areas: "react react" "nextjs nextjs" "gatsby gatsby" "javaScript typeScript" "css css" "tools tools";
 	gap: 1.5rem 2rem;
 	background-color: rgba(0, 0, 0, 0.6);
 	box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
@@ -104,6 +104,10 @@
 .nextjs {
 	@include skill(rgb(255, 255, 255));
 	grid-area: nextjs;
+}
+.gatsby {
+	@include skill(rgb(112, 74, 153));
+	grid-area: gatsby;
 }
 
 .javaScript {
