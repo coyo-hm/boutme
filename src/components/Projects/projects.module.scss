@@ -53,19 +53,20 @@
 	}
 
 	:nth-child(even) > .projectBox {
-		background-color: rgba(255, 255, 255, 0.6);
+		background-color: rgba(255, 255, 255, 0.08);
 
 		h1 {
-			text-shadow: 3px 3px 3px rgb(255, 255, 255);
+			//text-shadow: 3px 3px 3px rgb(255, 255, 255);
 		}
 
 		svg > * {
-			color: rgba(0, 0, 0, 1);
+			//color: rgba(0, 0, 0, 1);
+			color: rgba(255, 255, 255, 1);
 		}
 
 		* {
-			color: rgba(0, 0, 0, 1);
-			border-color: rgba(0, 0, 0, 1);
+			//color: rgba(0, 0, 0, 1);
+			//border-color: rgba(0, 0, 0, 1);
 		}
 
 		hr {
