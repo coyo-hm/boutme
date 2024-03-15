@@ -18,6 +18,7 @@ import LogoSlack from "@assets/slack.png";
 import LogoNotion from "@assets/notion.webp";
 import LogoFigma from "@assets/figma.png";
 import LogoStorybook from "@assets/storybook.svg";
+import PageTitle from "@components/PageTitle";
 
 export default function Skills() {
 	const SKILLS_LIST = [
@@ -115,7 +116,7 @@ export default function Skills() {
 	return (
 		<div className={styles.skills} id={"skills"}>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Skills</h1>
+				<PageTitle className={styles.title}>Skills</PageTitle>
 				{SKILLS_LIST.map(({ key, icon, label, description }) => (
 					<div className={styles[key]} key={key}>
 						<h1>

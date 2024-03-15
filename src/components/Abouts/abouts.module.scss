@@ -25,14 +25,7 @@
 	grid-area: title;
 	flex-shrink: 0;
 	white-space: nowrap;
-	font-weight: 900;
-	font-size: 3rem;
-	line-height: 3.5rem;
-	text-shadow:
-		0 0 20px rgba(lighten(#667eea, 20%), 0.9),
-		-5px -5px 0 rgba(#c2b7fe, 0.5),
-		5px 5px 0 rgba(#95a9ff, 0.6);
-	color: rgba(255, 255, 255, 1);
+	text-shadow: 5px 5px 0 rgb(255, 187, 1);
 }
 
 .text {
@@ -98,10 +91,10 @@
 	li {
 		list-style-type: disc;
 		list-style-position: outside;
-		font-weight: 600;
+		font-weight: 300;
 		word-break: keep-all;
 		white-space: pre-line;
-		font-size: 1.25rem;
+		font-size: 1.1rem;
 		line-height: 1.85rem;
 	}
 

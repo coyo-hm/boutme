@@ -8,6 +8,7 @@ import ImgBoard from "@assets/board-card-dnd.gif";
 import ImgUI from "@assets/coyo-ui-sample.png";
 import LogoDisboard from "@assets/disboard.png";
 import ImgDisboard from "@assets/disboard-sample.png";
+import PageTitle from "@components/PageTitle";
 
 export default function Projects() {
 	const PROJECT_DATA: ProjectProps[] = [
@@ -128,7 +129,7 @@ export default function Projects() {
 	return (
 		<div id={"projects"} className={styles.projects}>
 			<div className={styles.content}>
-				<h1 className={styles.title}>Projects</h1>
+				<PageTitle className={styles.title}>Projects</PageTitle>
 				<div className={styles.projectsContainer}>
 					{PROJECT_DATA.map(project => (
 						<ProjectBox {...project} key={project.title} />
