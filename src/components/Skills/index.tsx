@@ -63,13 +63,16 @@ export default function Skills() {
 			key: "javaScript",
 			icon: <Image src={LogoJavaScript} alt={"logo-javaScript"} />,
 			label: "JavaScript",
-			description: ["ES6 문법에 익숙해요."]
+			description: ["ES6 문법에 익숙해요.", "node.js 환경에서 js를 이용해서 다양한 과제를 수행한 경험이 있습니다."]
 		},
 		{
 			key: "typeScript",
 			icon: <Image src={LogoTypeScript} alt={"logo-typeScript"} />,
 			label: "TypeScript",
-			description: ["TypeScript를 사용해서 다양한 프로젝트를 진행한 경험이 있습니다."]
+			description: [
+				"TypeScript를 사용해서 다양한 프로젝트를 진행하여 실제 서비스에 배포한 경험이 있습니다.",
+				"javascript에서 typeScript로 주도적으로 migration을 진행한 경험이 있습니다."
+			]
 		},
 		{
 			key: "css",
@@ -112,9 +115,7 @@ export default function Skills() {
 	return (
 		<div className={styles.skills} id={"skills"}>
 			<div className={styles.content}>
-				<h1  className={styles.title}>
-					Skills
-				</h1>
+				<h1 className={styles.title}>Skills</h1>
 				{SKILLS_LIST.map(({ key, icon, label, description }) => (
 					<div className={styles[key]} key={key}>
 						<h1>
