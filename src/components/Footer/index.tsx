@@ -5,7 +5,7 @@ import IconGithub from "@assets/github.svg";
 
 export default function Footer() {
 	return (
-		<footer id={"footer"} className={"w-full py-4"}>
+		<footer id={"footer"} className={"w-full py-4 mt-16"}>
 			<div className={styles.links}>
 				<Link  href="mailto:bsydwp@gmail.com">
 					<IconMail width={24} height={24} className={styles.icon}/>
