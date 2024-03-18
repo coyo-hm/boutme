@@ -52,7 +52,7 @@
 		width: 0;
 	}
 	50% {
-		width: 470px;
+		width: 421px;
 
 	}
 	100% {
@@ -65,7 +65,7 @@
 		width: 0;
 	}
 	50% {
-		width: 235px;
+		width: 241px;
 	}
 	100% {
 		width: 0;
@@ -74,11 +74,11 @@
 
 .greeting {
 	color: transparent;
-	font-size: 32px;
+	font-size: 28px;
 	white-space: nowrap;
 
 	&::after {
-		content: "안녕하세요. FE 개발자 윤다연입니다.";
+		content: "안녕하세요. FE 개발자 COYO입니다.";
 		position: absolute;
 		color: rgba(255, 255, 255, 1);
 		overflow: hidden;

@@ -5,7 +5,7 @@ export default function Home() {
 		<div className={styles.home} id={"home"}>
 			<div>
 				<h1 className={styles.job}>FRONTEND DEVELOPER</h1>
-				<h1 className={styles.name}>DAYEON YOON</h1>
+				<h1 className={styles.name}>COYO</h1>
 				<div className={styles.greeting} />
 			</div>
 		</div>
