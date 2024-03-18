@@ -21,7 +21,7 @@ export interface ProjectProps {
 
 export default function ProjectBox({ logo, title, date, role, skills, links, summary, details, sample }: ProjectProps) {
 	return (
-		<div className={styles.projectContainer}>
+		<div className={styles.projectContainer} id={title}>
 			<ul className={styles.projectLinks}>
 				{links.map((link, idx) => (
 					<ProjectLink {...link} key={idx} />

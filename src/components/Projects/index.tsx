@@ -14,7 +14,7 @@ export default function Projects() {
 	const PROJECT_DATA: ProjectProps[] = [
 		{
 			logo: <LogoCOYOLOG height={32} width={"auto"} />,
-			title: "Blog: COYO-LOG",
+			title: "blog",
 			date: "2022.10 ~ current",
 			role: "1인 진행",
 			skills: [
@@ -42,6 +42,33 @@ export default function Projects() {
 				"사용자 입장에서 블로그에 꼭 추가하고 싶었던 기능들을 추가하려고 했습니다."
 			],
 			sample: ImgCOYOLOG
+		},
+		{
+			title: "COYO-UI",
+			date: "2024.2.11 ~ current",
+			role: "1인 진행",
+			skills: ["React", "TypeScript", "Emotion", "Storybook", "Chromatic", "Husky", "Commitlint", "Semantic-Release"],
+			links: [
+				{
+					type: "storybook",
+					url: "https://main--65ae91d7cdf7712a838d310c.chromatic.com/"
+				},
+				{
+					type: "git",
+					url: "https://github.com/coyo-hm/coyo-ui"
+				},
+				{
+					type: "npm",
+					url: "https://www.npmjs.com/package/coyo-ui"
+				}
+			],
+			summary:
+				"프로젝트 진행 중 자주 사용할 것 같은 ui component 를 생성해 둔 UI Kit 입니다. 블로그나 다른 프로젝트 중에 자주 사용하는 애니메이션을 추가하고 있습니다.",
+			details: [
+				"Storybook을 활용한 UI Kit 입니다.",
+				"husky + commlint + semantic-release 를 통해 커밋메세지를 통해 SemVer는 물론 Change-Log, Release Note 들을 자동으로 관리해주도록 해주었습니다."
+			],
+			sample: ImgUI
 		},
 		{
 			title: "📖 SIMPLE KANBAN BOARD",
@@ -72,33 +99,6 @@ export default function Projects() {
 				"사용자가 생성한 보드와 카드, 지정한 색상 정보는 localStorage에 저장해서 데이터가 유지되도록 했습니다."
 			],
 			sample: ImgBoard
-		},
-		{
-			title: "COYO-UI",
-			date: "2024.2.11 ~ current",
-			role: "1인 진행",
-			skills: ["React", "TypeScript", "Emotion", "Storybook", "Chromatic", "Husky", "Commitlint", "Semantic-Release"],
-			links: [
-				{
-					type: "storybook",
-					url: "https://main--65ae91d7cdf7712a838d310c.chromatic.com/"
-				},
-				{
-					type: "git",
-					url: "https://github.com/coyo-hm/coyo-ui"
-				},
-				{
-					type: "npm",
-					url: "https://www.npmjs.com/package/coyo-ui"
-				}
-			],
-			summary:
-				"프로젝트 진행 중 자주 사용할 것 같은 ui component 를 생성해 둔 UI Kit 입니다. 블로그나 다른 프로젝트 중에 자주 사용하는 애니메이션을 추가하고 있습니다.",
-			details: [
-				"Storybook을 활용한 UI Kit 입니다.",
-				"husky + commlint + semantic-release 를 통해 커밋메세지를 통해 SemVer는 물론 Change-Log, Release Note 들을 자동으로 관리해주도록 해주었습니다."
-			],
-			sample: ImgUI
 		},
 		{
 			title: "DISBOARD",
@@ -132,7 +132,7 @@ export default function Projects() {
 				<PageTitle className={styles.title}>Projects</PageTitle>
 				<div className={styles.projectsContainer}>
 					{PROJECT_DATA.map(project => (
-						<ProjectBox {...project} key={project.title} />
+						<ProjectBox {...project} key={project.title}  />
 					))}
 				</div>
 			</div>

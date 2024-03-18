@@ -1,9 +1,12 @@
 @import "src/styles";
 @import "src/styles/screen";
 
+$highlight-color: rgb(255, 187, 1);
+
 .abouts {
 	width: 100%;
 	min-height: 100vh;
+	padding: 5rem 0;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -11,13 +14,8 @@
 
 	& > div {
 		display: grid;
-		grid-template-areas: "title title" "birth mail" "link1 link2" "description description" "description description";
-
+		grid-template-areas: "title title title" "blog github mail" "description description description";
 		gap: 15px;
-
-		@include desktop {
-			grid-template-areas: "title title" "birth description" "mail description" "link1 description" "link2 description";
-		}
 	}
 }
 
@@ -25,7 +23,7 @@
 	grid-area: title;
 	flex-shrink: 0;
 	white-space: nowrap;
-	text-shadow: 5px 5px 0 rgb(255, 187, 1);
+	text-shadow: 5px 5px 0 $highlight-color;
 }
 
 .text {
@@ -38,16 +36,6 @@
 		color: white;
 		font-weight: 800;
 	}
-}
-
-.birth {
-	@extend .text;
-	grid-area: birth;
-}
-
-.mail {
-	@extend .text;
-	grid-area: mail;
 }
 
 .link {
@@ -65,42 +53,67 @@
 		transform: translateY(-0.2rem);
 		transition: all 0.3s ease-in-out;
 	}
+
+	svg > * {
+		color: #667eea !important;
+		fill: #667eea !important;
+	}
 }
 
-.link1 {
+.mail {
 	@extend .link;
-	grid-area: link1;
+	grid-area: mail;
 }
 
-.link2 {
+.blog {
 	@extend .link;
-	grid-area: link2;
+	grid-area: blog;
 }
 
 .github {
-	& > * {
-		color: #667eea;
-	}
+	@extend .link;
+	grid-area: github;
 }
 
 .description {
 	@extend .box;
 	grid-area: description;
-	padding: 20px 20px 20px 40px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
 
-	li {
-		list-style-type: disc;
-		list-style-position: outside;
-		font-weight: 300;
-		word-break: keep-all;
-		white-space: pre-line;
-		font-size: 1.1rem;
-		line-height: 1.85rem;
-	}
+	article {
+		h1 {
+			font-weight: 600;
+			font-size: 1.25rem;
+		}
 
-	@include mobile {
+		ul {
+			padding-left: 40px;
+		}
+
 		li {
-			font-size: 1rem;
+			list-style-type: disc;
+			list-style-position: outside;
+			font-weight: 300;
+			word-break: keep-all;
+			white-space: pre-line;
+			font-size: 1.1rem;
+			line-height: 1.85rem;
+		}
+
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				color: $highlight-color;
+			}
 		}
 	}
+}
+
+.highlight {
+	color: $highlight-color;
+	font-weight: 900;
 }
