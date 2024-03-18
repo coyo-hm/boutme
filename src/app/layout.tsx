@@ -7,8 +7,8 @@ import "@styles/globals.css";
 const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Dayeon's Portfolio",
-	description: "FE 개발자 윤다연의 포토폴리오입니다!",
+	title: "COYO's Portfolio",
+	description: "FE 개발자 COYO의 포토폴리오입니다!",
 	icons:{
 		icon:"./favicon.ico"
 	}
