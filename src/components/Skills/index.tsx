@@ -22,44 +22,45 @@ import PageTitle from "@components/PageTitle";
 
 export default function Skills() {
 	const SKILLS_LIST = [
-		{
-			key: "nextjs",
-			icon: <LogoNextJs alt={"logo-nextjs"} />,
-			label: "NextJs",
-			description: [
-				"NextJs를 통해 SSG 사이트를 생성한 경험이 있습니다.",
-				"지금 이 포토폴리오와 블로그 모두 NextJs로 만들어진 사이트 입니다."
-			]
-		},
+		// {
+		// 	key: "nextjs",
+		// 	icon: <LogoNextJs alt={"logo-nextjs"} />,
+		// 	label: "NextJs",
+		// 	description: [
+		// 		"NextJs를 통해 SSG 사이트를 생성한 경험이 있습니다.",
+		// 		"지금 이 포토폴리오와 블로그 모두 NextJs로 만들어진 사이트 입니다."
+		// 	]
+		// },
 		{
 			key: "react",
 			icon: <Image src={LogoReact} alt={"logo-react"} />,
 			label: "React",
 			description: [
 				"실무에서 React를 이용해 설계부터 배포, VOC 대응까지 진행해본 경험이 있습니다.",
-				"Redux, RTK, Recoil 등 다양한 상태 관리 라이브러리 사용 경험이 있습니다."
+				"Redux, RTK, Recoil 등 다양한 상태 관리 라이브러리 사용 경험으로 비즈니스 로직에 맞는 적절한 상태관리를 사용할 수 있습니다.",
+				"React 이외에도 NextJS와 Gatsby 등 다양한 프레임워크 사용 경험이 있습니다."
 			]
 		},
-		{
-			key: "gatsby",
-			icon: <Image alt={"logo-gatsby"} src={LogoGatsby} />,
-			label: "Gatsby",
-			description: [
-				"Gatsby를 통해 SSG 사이트를 생성한 경험이 있습니다.",
-				<>
-					이전 버전의 블로그 Gatsby로 만들어진 사이트입니다. 해당 코드는{" "}
-					<Link
-						target={"_blank"}
-						rel="noreferrer"
-						href={"https://github.com/coyo-hm/COYO-HM.github.io/tree/gatsby-backup"}
-						className={"text-[#C4B3D9] underline"}
-					>
-						블로그 gatsby-backup 브랜치
-					</Link>
-					에 백업되어 있습니다.
-				</>
-			]
-		},
+		// {
+		// 	key: "gatsby",
+		// 	icon: <Image alt={"logo-gatsby"} src={LogoGatsby} />,
+		// 	label: "Gatsby",
+		// 	description: [
+		// 		"Gatsby를 통해 SSG 사이트를 생성한 경험이 있습니다.",
+		// 		<>
+		// 			이전 버전의 블로그 Gatsby로 만들어진 사이트입니다. 해당 코드는{" "}
+		// 			<Link
+		// 				target={"_blank"}
+		// 				rel="noreferrer"
+		// 				href={"https://github.com/coyo-hm/COYO-HM.github.io/tree/gatsby-backup"}
+		// 				className={"text-[#C4B3D9] underline"}
+		// 			>
+		// 				블로그 gatsby-backup 브랜치
+		// 			</Link>
+		// 			에 백업되어 있습니다.
+		// 		</>
+		// 	]
+		// },
 		{
 			key: "javaScript",
 			icon: <Image src={LogoJavaScript} alt={"logo-javaScript"} />,
@@ -72,7 +73,7 @@ export default function Skills() {
 			label: "TypeScript",
 			description: [
 				"TypeScript를 사용해서 다양한 프로젝트를 진행하여 실제 서비스에 배포한 경험이 있습니다.",
-				"javascript에서 typeScript로 주도적으로 migration을 진행한 경험이 있습니다."
+				"JavaScript에서 TypeScript로 주도적으로 migration을 진행한 경험이 있습니다."
 			]
 		},
 		{
@@ -81,13 +82,17 @@ export default function Skills() {
 			label: "CSS",
 			description: [
 				<>
-					<span className={"text-[#C66395FF] font-semibold"}>scss</span>,{" "}
-					<span className={"text-[#BF4F74] font-semibold"}>styled-components</span>,{" "}
-					<span className={"text-[#D26AC2] font-semibold"}>emotion</span>,{" "}
-					<span className={"text-[#0EA5E9] font-semibold"}>tailwind</span> 등 다양한 css 사용 경험이 있습니다.
+					css in js 와 css preprocessor 모두 사용 경험이 있으나 개인적으로 css preprocessor인{" "}
+					<span className={"text-[#C66395FF] font-semibold"}>SCSS</span>를 가장 선호합니다.
 				</>,
 				<>
-					실무에서는 <span className={"text-[#C66395FF] font-semibold"}>scss</span>와{" "}
+					<span className={"text-[#C66395FF] font-semibold"}>SCSS</span>의 @mixin, 함수, 조건 등 다양한 기능을 사용해 생산적으로 스타일 다룰 수 있습니다.
+				</>,
+				<>
+					<span className={"text-[#D26AC2] font-semibold"}>emotion</span>의 CSS Prop을 사용합니다.
+				</>,
+				<>
+					실무에서는 <span className={"text-[#C66395FF] font-semibold"}>SCSS</span>와{" "}
 					<span className={"text-[#BF4F74] font-semibold"}>styled-components</span>,{" "}
 					<span className={"text-[#E2F0FF] font-semibold"}>less</span>를 주로 사용하였습니다.
 				</>,
