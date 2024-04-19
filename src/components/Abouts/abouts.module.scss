@@ -5,7 +5,9 @@ $highlight-color: rgb(255, 187, 1);
 
 .abouts {
 	width: 100%;
+	max-width: 1024px;
 	min-height: 100vh;
+	margin: 0 auto;
 	padding: 5rem 0;
 	position: relative;
 	display: flex;

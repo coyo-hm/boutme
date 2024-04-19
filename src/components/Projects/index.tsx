@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectBox, { ProjectProps } from "@components/Projects/ProjectBox";
+import PageTitle from "@components/PageTitle";
 import styles from "./projects.module.scss";
 
 import LogoCOYOLOG from "@assets/coyo-log.svg";
@@ -8,7 +9,7 @@ import ImgBoard from "@assets/board-card-dnd.gif";
 import ImgUI from "@assets/coyo-ui-sample.png";
 import LogoDisboard from "@assets/disboard.png";
 import ImgDisboard from "@assets/disboard-sample.png";
-import PageTitle from "@components/PageTitle";
+
 
 export default function Projects() {
 	const PROJECT_DATA: ProjectProps[] = [
