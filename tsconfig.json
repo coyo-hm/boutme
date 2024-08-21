@@ -22,7 +22,7 @@
       "@assets/*": ["./public/assets/*"],
       "@public/*": ["./public/*"],
       "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
+      "@i18n/*": ["./src/i18n/*"],
       "@styles/*": ["./src/styles/*"],
       "@src/*": ["./src/*"]
     }
