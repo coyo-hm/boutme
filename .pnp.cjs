@@ -27,12 +27,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@svgr/webpack", "npm:8.1.0"],\
+          ["@types/matter-js", "npm:0.19.7"],\
           ["@types/node", "npm:20.11.24"],\
           ["@types/react", "npm:18.2.63"],\
           ["@types/react-dom", "npm:18.2.20"],\
           ["autoprefixer", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:10.4.18"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:14.1.2"],\
+          ["matter-js", "npm:0.20.0"],\
           ["next", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:14.1.2"],\
           ["next-intl", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:3.17.4"],\
           ["postcss", "npm:8.4.35"],\
@@ -3316,6 +3318,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/matter-js", [\
+      ["npm:0.19.7", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-matter-js-npm-0.19.7-bd8c3f482f-10c0.zip/node_modules/@types/matter-js/",\
+        "packageDependencies": [\
+          ["@types/matter-js", "npm:0.19.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/node", [\
       ["npm:20.11.24", {\
         "packageLocation": "../../.yarn/berry/cache/@types-node-npm-20.11.24-4e19eedf98-10c0.zip/node_modules/@types/node/",\
@@ -3957,12 +3968,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["boutme", "workspace:."],\
           ["@svgr/webpack", "npm:8.1.0"],\
+          ["@types/matter-js", "npm:0.19.7"],\
           ["@types/node", "npm:20.11.24"],\
           ["@types/react", "npm:18.2.63"],\
           ["@types/react-dom", "npm:18.2.20"],\
           ["autoprefixer", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:10.4.18"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-next", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:14.1.2"],\
+          ["matter-js", "npm:0.20.0"],\
           ["next", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:14.1.2"],\
           ["next-intl", "virtual:40564b1e777eb7429ec7818072a0bf02dca9df24701e528ec61dbfe4a93b79a1e56355da8756973a68018d808da2b626ce353b956268889b7ae92bf61bce9807#npm:3.17.4"],\
           ["postcss", "npm:8.4.35"],\
@@ -6410,6 +6423,15 @@ const RAW_RUNTIME_STATE =
           ["negotiator", "npm:0.6.3"],\
           ["promise-retry", "npm:2.0.1"],\
           ["ssri", "npm:10.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["matter-js", [\
+      ["npm:0.20.0", {\
+        "packageLocation": "../../.yarn/berry/cache/matter-js-npm-0.20.0-7d3bb65115-10c0.zip/node_modules/matter-js/",\
+        "packageDependencies": [\
+          ["matter-js", "npm:0.20.0"]\
         ],\
         "linkType": "HARD"\
       }]\

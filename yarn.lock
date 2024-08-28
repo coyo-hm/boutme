@@ -1953,6 +1953,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/matter-js@npm:^0":
+  version: 0.19.7
+  resolution: "@types/matter-js@npm:0.19.7"
+  checksum: 10c0/c42cd117c9e0b85c55382f935480e7b11ec0c66f1bd79b11cf582adb97d222724efecae31e7e37650a665ee1f61924066cfeca6f5c28f2a1a5e5b6ec2690f48b
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^20":
   version: 20.11.24
   resolution: "@types/node@npm:20.11.24"
@@ -2457,12 +2464,14 @@ __metadata:
   resolution: "boutme@workspace:."
   dependencies:
     "@svgr/webpack": "npm:^8.1.0"
+    "@types/matter-js": "npm:^0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     autoprefixer: "npm:^10.0.1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.2"
+    matter-js: "npm:^0.20.0"
     next: "npm:14.1.2"
     next-intl: "npm:^3.17.4"
     postcss: "npm:^8"
@@ -4525,6 +4534,13 @@ __metadata:
     promise-retry: "npm:^2.0.1"
     ssri: "npm:^10.0.0"
   checksum: 10c0/43b9f6dcbc6fe8b8604cb6396957c3698857a15ba4dbc38284f7f0e61f248300585ef1eb8cc62df54e9c724af977e45b5cdfd88320ef7f53e45070ed3488da55
+  languageName: node
+  linkType: hard
+
+"matter-js@npm:^0.20.0":
+  version: 0.20.0
+  resolution: "matter-js@npm:0.20.0"
+  checksum: 10c0/95d58f407205ad24c96422109c959999f474ef29af79b4c2ad7550bca97cdcdac99df31ebe35ab858d9863c8f6cd5205339fbbff70909b56a3e2a6a57200c51b
   languageName: node
   linkType: hard
 

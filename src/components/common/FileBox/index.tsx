@@ -3,12 +3,11 @@ import styles from "./filebox.module.scss";
 
 interface Props extends PropsWithChildren {
 	className?: string;
-	containerClassName?: string;
 }
 
-const FileBox = ({ className, containerClassName, children }: Props) => {
+const FileBox = ({ className, children }: Props) => {
 	return (
-		<div className={`${containerClassName} ${styles.fileBox} `}>
+		<div className={styles.fileBox}>
 			<ul className={styles.fileBoxHeader}>
 				<li />
 				<li />
