@@ -1,10 +1,10 @@
 .fileBox {
+	position: absolute;
+	overflow: hidden;
 	width: fit-content;
 	background: rgba(0, 0, 0, 0.6);
 	border-radius: 10px;
-	overflow: hidden;
 	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.7);
-	margin-right: 10px;
 }
 
 .fileBoxHeader {

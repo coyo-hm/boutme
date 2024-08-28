@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "matter-js": "^0.20.0",
     "next": "14.1.2",
     "next-intl": "^3.17.4",
     "react": "^18",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@types/matter-js": "^0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
