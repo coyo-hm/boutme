@@ -3,5 +3,10 @@
     "placeholder": "Language",
     "ko": "한국어",
     "en": "English"
+  },
+  "mainPage": {
+    "position": "FRONTEND DEVELOPER",
+    "nickname": "COYO",
+    "greetings": "Hello, I'm COYO, a FE developer."
   }
 }
