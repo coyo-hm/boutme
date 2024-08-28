@@ -19,9 +19,12 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@icons/*": ["./public/assets/icons/*"],
       "@assets/*": ["./public/assets/*"],
       "@public/*": ["./public/*"],
+      "@commonComponents/*": ["./src/components/common/*"],
       "@components/*": ["./src/components/*"],
+      "@constants/*": ["./src/constants/*"],
       "@i18n/*": ["./src/i18n/*"],
       "@styles/*": ["./src/styles/*"],
       "@src/*": ["./src/*"]

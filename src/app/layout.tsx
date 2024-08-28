@@ -4,7 +4,7 @@ import React from "react";
 import "@styles/globals.css";
 
 
-const font = Montserrat({ subsets: ["latin"] });
+// const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "COYO's Portfolio",
@@ -19,11 +19,5 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return (
-		<html lang="ko">
-			<body className={font.className}>
-				{children}
-			</body>
-		</html>
-	);
+	return children
 }

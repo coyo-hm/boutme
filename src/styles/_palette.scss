@@ -1,0 +1,26 @@
+$palette: (
+	green: (
+		base: rgb(0, 110, 51),
+		dark: #005427,
+		darker: #003b1b
+	)
+);
+
+@function color($color, $tone) {
+	//@warn map-get($palette,$color);
+
+	@if map-has-key($palette, $color) {
+		$color: map-get($palette, $color);
+
+		@if map-has-key($color, $tone) {
+			$tone: map-get($color, $tone);
+			@return $tone;
+		}
+
+		@warn "unknown tone `#{$tone}` in color";
+		@return null;
+	}
+
+	@warn "unknown color `#{$color}` in palette";
+	@return null;
+}
