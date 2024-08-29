@@ -35,7 +35,7 @@ const FallingText = ({ text, highlightTexts = [] }: Props) => {
 		};
 
 		const walls = [
-			Bodies.rectangle(canvasSize.width / 2, canvasSize.height, canvasSize.width, 50, params),
+			Bodies.rectangle(canvasSize.width / 2, canvasSize.height, canvasSize.width, 10, params),
 			Bodies.rectangle(0, canvasSize.height / 2, 50, canvasSize.height, params),
 			Bodies.rectangle(canvasSize.width, canvasSize.height / 2, 50, canvasSize.height, params)
 		];
