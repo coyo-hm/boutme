@@ -6,7 +6,7 @@ import FileBox from "@commonComponents/FileBox";
 import FallingText from "@components/main/FallingText";
 
 const TEXT =
-	"web developer with over 2 years of experience, I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. abouts";
+	"Web developer with over 2 years of experience, I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. abouts";
 
 export default function MainPage() {
 	const locale = useLocale()
