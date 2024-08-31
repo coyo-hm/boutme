@@ -49,7 +49,7 @@ const FallingText = ({ text, highlightTexts = [] }: Props) => {
 					render: {
 						fillStyle: "transparent"
 					},
-					restitution: 0.2
+					// restitution: 0.2
 				}),
 				elem: element,
 				render() {
