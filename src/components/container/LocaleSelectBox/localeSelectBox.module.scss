@@ -1,0 +1,69 @@
+@import "src/styles/palette";
+
+.localeSelectBoxContainer {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	min-width: 4rem;
+	width: fit-content;
+	z-index: 100;
+}
+
+.btnValue {
+	width: 100%;
+	padding: 5px 5px 5px 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 6px;
+	word-break: keep-all;
+
+	//font-size: 1.2rem;
+
+	& > svg {
+		width: 1.2rem;
+		flex: 1 0 1rem;
+		transition: 0.3s ease-in-out;
+	}
+
+  &:hover {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+.options {
+	position: absolute;
+	margin: 0.2rem 0 0;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 6px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.scrollArea {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	max-height: 80px;
+}
+
+.option {
+	padding: 5px 10px;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.5);
+
+	&:hover {
+		background: rgba(0, 0, 0, 1);
+		color: rgba(255, 255, 255, 1);
+	}
+
+	&.selected {
+		color: color(green, lighter);
+		//cursor: not-allowed;
+		//pointer-events: none;
+	}
+}
