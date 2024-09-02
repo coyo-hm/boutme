@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { locales } from "@i18n/i18n";
 import { usePathname, useRouter } from "@i18n/navigation";
@@ -12,12 +12,19 @@ import GlobeIcon from "@icons/globe.svg";
 // interface Props {}
 
 const LocaleSelectBox = () => {
-	const [isOpen, setIsOpen] = useState<boolean>(false);
-	const [styleClass, setStyleClass] = useState<any>("");
-	const selectedLocale = useLocale();
 	const router = useRouter();
 	const pathname = usePathname();
 	const t = useTranslations("locale");
+	const selectedLocale = useLocale();
+
+	const [isOpen, setIsOpen] = useState<boolean>(false);
+	const [styleClass, setStyleClass] = useState<any>("");
+
+	const buttonRef = useRef<HTMLButtonElement>(null);
+	const optionsRef = useRef<HTMLDivElement>(null);
+
+
+
 
 	useEffect(() => {
 		(async () => {
@@ -28,15 +35,35 @@ const LocaleSelectBox = () => {
 		})();
 	}, [isOpen]);
 
+	const closeSelect = (e: MouseEvent) => {
+		if (!optionsRef.current?.contains(e.target as any) && e.target !== buttonRef.current) {
+			setIsOpen(false);
+		}
+	};
+
+	useEffect(() => {
+		if (isOpen) {
+			window.addEventListener("click", closeSelect);
+		} else {
+			window.removeEventListener("click", closeSelect);
+		}
+	}, [isOpen]);
+
+
+
 	return (
 		<div className={styles.localeSelectBoxContainer}>
-			<button className={`${styles.btnValue} ${styleClass.btnValue}`} onClick={() => setIsOpen(prev => !prev)}>
+			<button
+				className={`${styles.btnValue} ${styleClass.btnValue}`}
+				onClick={() => setIsOpen(prev => !prev)}
+				ref={buttonRef}
+			>
 				<GlobeIcon />
 				{t("placeholder")}
 				<DownArrowIcon className={styleClass.arrIcon} />
 			</button>
 			{isOpen && (
-				<div className={styles.options}>
+				<div className={styles.options} ref={optionsRef}>
 					<div className={styles.scrollArea}>
 						{locales.map(locale => (
 							<button
