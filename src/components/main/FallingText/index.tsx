@@ -100,7 +100,7 @@ const FallingText = ({ text, highlightTexts = [] }: Props) => {
 					if (word.startsWith(label)) {
 						return (
 							<Link href={url} className={`${styles.word} ${styles.highlight}`} key={index}>
-								{word}&nbsp;
+								#{word}&nbsp;
 							</Link>
 						);
 					}
