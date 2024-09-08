@@ -1,3 +1,5 @@
+@import "src/styles/palette";
+
 .mainPage {
 	width: 100%;
 	height: 100%;
@@ -8,7 +10,7 @@
 }
 
 .box {
-	min-width: 60vw;
+	position: absolute;
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
@@ -31,30 +33,23 @@
 
 .name {
 	//animation: blink-effect 7s ease-in-out infinite;
+	//text-shadow:
+	//	0 0 20px rgba(lighten(#667eea, 20%), 0.9),
+	//	-5px -5px 0 rgba(#c2b7fe, 0.5),
+	//	5px 5px 0 rgba(#95a9ff, 0.6);
 	font-weight: 900;
-	font-size: 5rem;
+	font-size: 8rem;
 	font-style: italic;
 	line-height: 5rem;
-	text-shadow:
-		0 0 20px rgba(lighten(#667eea, 20%), 0.9),
-		-5px -5px 0 rgba(#c2b7fe, 0.5),
-		5px 5px 0 rgba(#95a9ff, 0.6);
-	color: rgba(255, 255, 255, 1);
-	margin: 0 0 20px;
-}
-
-.line {
-	height: 3px;
-	width: 14rem;
-	background: rgba(255, 255, 255, 0.8);
+	color: color(green, base);
+	margin: 0 0 2.5rem;
 }
 
 .job {
-	margin: 10px 0 0;
 	font-size: 1.5rem;
 	font-weight: 700;
 	font-style: italic;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgb(0, 0, 0);
 }
 
 @keyframes typing {
@@ -98,9 +93,9 @@
 
 .greetingText {
 	position: absolute;
-	color: rgba(255, 255, 255, 1);
+	color: color(green, lighter);
 	overflow: hidden;
-	border-right: 1px solid rgba(255, 255, 255, 1);
+	border-right: 1px solid color(green, lighter);
 	animation: typing 10s steps(20) infinite;
 
 	&.en {
@@ -108,26 +103,4 @@
 	}
 }
 
-.toc {
-	margin: 20px auto 0;
-	display: flex;
-	gap: 32px;
 
-	.icon {
-		font-size: 2.5rem;
-	}
-
-	.link {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		font-weight: 200;
-		text-transform: uppercase;
-
-		&:hover {
-			transition: 0.3s ease-in-out;
-			transform: scale(1.1);
-		}
-	}
-}
