@@ -1,0 +1,58 @@
+@import "src/styles/palette";
+
+.localeSwitch {
+	width: 100%;
+	height: 46.5px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	cursor: pointer;
+
+	svg path {
+		stroke: rgba(255, 255, 255, 0.8);
+		stroke-width: 1.5;
+	}
+
+	span {
+		display: block;
+		margin: 0 5px 0 3px;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	button {
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1.2rem;
+		margin: 0 0 0 7px;
+		color: color(green, light);
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background-color: color(green, light);
+			opacity: 0.01;
+			transition: 0.5s ease-in-out;
+		}
+
+		&:hover::after {
+			opacity: 1;
+		}
+	}
+
+	.selected {
+		color: white;
+		font-weight: 500;
+
+		&::after {
+			background-color: white;
+		}
+	}
+}
