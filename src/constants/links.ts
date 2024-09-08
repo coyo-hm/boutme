@@ -1,4 +1,5 @@
 const LINKS = [
+	{ label: "home", url: "/" },
 	{ label: "abouts", url: "/abouts" },
 	{ label: "skills", url: "/skills" },
 	{ label: "careers", url: "/careers" },
