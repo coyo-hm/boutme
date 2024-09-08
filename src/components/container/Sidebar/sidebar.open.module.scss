@@ -1,0 +1,34 @@
+.sidebar {
+	transform: translateX(100%);
+}
+
+.hamburgerIcon {
+	span {
+		background-color: white;
+	}
+	span:nth-child(1) {
+		top: 18px;
+		width: 0;
+		left: 50%;
+	}
+
+	span:nth-child(2) {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	span:nth-child(3) {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	span:nth-child(4) {
+		top: 18px;
+		width: 0;
+		left: 50%;
+	}
+}

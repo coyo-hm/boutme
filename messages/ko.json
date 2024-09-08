@@ -4,6 +4,9 @@
     "ko": "한국어",
     "en": "en"
   },
+  "container": {
+    "copyComplete": "클립보드에 이메일이 복사되었습니다."
+  },
   "mainPage": {
     "position": "FRONTEND DEVELOPER",
     "nickname": "COYO",

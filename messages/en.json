@@ -4,6 +4,9 @@
     "ko": "한국어",
     "en": "en"
   },
+  "container": {
+    "copyComplete": "The email has been copied to the clipboard."
+  },
   "mainPage": {
     "position": "FRONTEND DEVELOPER",
     "nickname": "COYO",
