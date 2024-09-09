@@ -10,7 +10,7 @@ export default function MainPage() {
 	const locale = useLocale()
 	const t = useTranslations("mainPage")
 	return (
-		<div className={styles.mainPage}>
+		<section className={styles.mainPage}>
 			<FallingText text={TEXT} highlightTexts={LINKS} />
 			<div className={styles.box}>
 				<h1 className={styles.name}>COYO</h1>
@@ -20,6 +20,6 @@ export default function MainPage() {
 					<p className={`${styles.greetingText} ${locale}`}>{t("greetings")}</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
