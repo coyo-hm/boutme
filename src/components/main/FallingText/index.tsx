@@ -54,9 +54,6 @@ const FallingText = ({ text, highlightTexts = [] }: Props) => {
 				elem: element,
 				render() {
 					const { x, y } = this.body.position;
-					if (y - height / 2 < 0) {
-						console.log(y, height, element);
-					}
 
 					this.elem.style.top = `${y - height / 2}px`;
 					this.elem.style.left = `${x - width / 2}px`;

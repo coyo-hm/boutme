@@ -20,7 +20,7 @@ const Contact = () => {
 			await navigator.clipboard.writeText(EMAiL);
 			alert(t("copyComplete"));
 		} catch (e) {
-			console.log(e);
+			console.error(e);
 		}
 	};
 
