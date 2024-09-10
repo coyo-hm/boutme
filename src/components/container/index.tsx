@@ -11,13 +11,25 @@ const Container = ({ children }: Props) => {
 
 	useEffect(() => {
 		const cursor = cursorRef.current as HTMLDivElement;
+		const linkEle = document.querySelectorAll("a");
+		const buttonEle = document.querySelectorAll("button");
+
 		const moveCursor = (e: any) => {
 			cursor.style.left = e?.pageX + "px";
 			cursor.style.top = e.pageY - scrollY + "px";
 		};
+
 		window.addEventListener("scroll", moveCursor);
 		window.addEventListener("mousemove", moveCursor);
 
+		[...linkEle, ...buttonEle].forEach(ele => {
+			ele.addEventListener("mouseover", () => {
+				cursor.style.transform = "scale(2)";
+			});
+			ele.addEventListener("mouseleave", () => {
+				cursor.style.transform = "scale(1)";
+			});
+		});
 
 	}, []);
 
