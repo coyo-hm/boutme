@@ -2,6 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import styles from "./page.module.scss";
 import LINKS from "@constants/links";
 import FallingText from "@components/main/FallingText";
+import INFO from "@constants/info";
 
 const TEXT =
 	"Web developer with over 2 years of experience, skills I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. abouts careers projects activities";
@@ -13,7 +14,7 @@ export default function MainPage() {
 		<section className={styles.mainPage}>
 			<FallingText text={TEXT} highlightTexts={LINKS} />
 			<div className={styles.box}>
-				<h1 className={styles.name}>COYO</h1>
+				<h1 className={styles.name}>{INFO.NICKNAME}</h1>
 				<div className={styles.line} />
 				<h1 className={styles.job}>FRONTEND DEVELOPER</h1>
 				<div className={styles.greeting}>
