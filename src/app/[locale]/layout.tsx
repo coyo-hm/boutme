@@ -13,7 +13,7 @@ export default async function LocaleLayout({
 	// Providing all messages to the client
 	// side is the easiest way to get started
 	const messages = await getMessages();
-	// unstable_setRequestLocale(locale);
+	unstable_setRequestLocale(locale);
 
 	return (
 		<html lang={locale}>
@@ -27,7 +27,7 @@ export default async function LocaleLayout({
 }
 
 
-// export function generateStaticParams() {
-// 	return routing.locales.map(locale => ({ locale }));
-// }
+export function generateStaticParams() {
+	return routing.locales.map(locale => ({ locale }));
+}
 
