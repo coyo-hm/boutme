@@ -6,6 +6,7 @@ import { Link, usePathname } from "@i18n/navigation";
 import LINKS from "@constants/links";
 import LocaleSwitch from "@components/container/LocaleSwitch";
 import Contact from "@components/container/Contact";
+import INFO from "@constants/info";
 
 const Sidebar = () => {
 	const pathname = usePathname();
@@ -45,7 +46,7 @@ const Sidebar = () => {
 					))}
 				</div>
 				<Contact />
-				<footer className={"text-center"}>© 2024 COYO All rights reserved.</footer>
+				<footer className={"text-center"}>© 2024 {INFO.NICKNAME} All rights reserved.</footer>
 			</div>
 		</div>
 	);

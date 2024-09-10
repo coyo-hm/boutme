@@ -8,8 +8,8 @@ import IconLink from "@icons/link-external.svg";
 import IconMail from "@assets/mail.svg";
 import IconBlog from "@assets/star.svg";
 import IconGithub from "@assets/github.svg";
+import INFO from "@constants/info";
 
-const EMAiL = "bsydwp@gmail.com";
 
 const Contact = () => {
 	const t = useTranslations("container");
@@ -17,7 +17,7 @@ const Contact = () => {
 	const onCopyEmail = async (e: MouseEvent<HTMLButtonElement>) => {
 		e.preventDefault();
 		try {
-			await navigator.clipboard.writeText(EMAiL);
+			await navigator.clipboard.writeText(INFO.EMAiL);
 			alert(t("copyComplete"));
 		} catch (e) {
 			console.error(e);
@@ -27,19 +27,19 @@ const Contact = () => {
 	return (
 		<div className={styles.contact}>
 			<h1>CONTACT</h1>
-			<Link href={`mailto:${EMAiL}`}>
+			<Link href={`mailto:${INFO.EMAiL}`}>
 				<IconMail width={24} height={24} className={styles.icon} />
-				<span>{EMAiL}</span>
+				<span>{INFO.EMAiL}</span>
 				<button className={styles.copyButton} onClick={onCopyEmail}>
 					<IconCopy width={20} height={20} />
 				</button>
 			</Link>
-			<Link className={styles.blog} href={"https://coyo-hm.github.io/"} target={"_blank"} rel="noreferrer">
+			<Link className={styles.blog} href={INFO.URL.BLOG} target={"_blank"} rel="noreferrer">
 				<IconBlog width={24} height={24} />
 				<span>BLOG</span>
 				<IconLink width={28} height={28} />
 			</Link>
-			<Link href={"https://github.com/coyo-hm"} target={"_blank"} rel="noreferrer">
+			<Link href={INFO.URL.GITHUB} target={"_blank"} rel="noreferrer">
 				<IconGithub width={24} height={24} className={styles.icon} />
 				<span>GITHUB</span>
 				<IconLink width={28} height={28} />
