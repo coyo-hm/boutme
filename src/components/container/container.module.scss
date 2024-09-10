@@ -38,8 +38,8 @@
 }
 
 .cursor {
-	width: 3rem;
-	height: 3rem;
+	width: 2rem;
+	height: 2rem;
 	//border: 2px solid rgba(0, 0, 0, 0.6);
 	background: rgba(255, 255, 255, 1);
 	border-radius: 50%;
@@ -48,7 +48,7 @@
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 	mix-blend-mode: difference;
-	//transition: all 0.3s ease;
+	transition: all 0.1s ease;
 	//transition-property: background, transform;
 	//transform-origin: 100% 100%;
 	//backdrop-filter: drop-shadow(16px 16px 20px blue);
@@ -56,11 +56,3 @@
 	//background-blend-mode: hue;
 }
 
-//.cursor-grow {
-//	transform: scale(2);
-//	background-color: #1d1d1d;
-//}
-//
-//.hovered-link {
-//	color: #fff !important;
-//}
