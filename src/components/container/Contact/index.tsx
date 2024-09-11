@@ -1,6 +1,6 @@
 import { MouseEvent } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@i18n/navigation";
+import { Link } from "@i18n/routing";
 import styles from "./contact.module.scss";
 
 import IconCopy from "@icons/copy.svg";

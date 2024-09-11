@@ -48,11 +48,10 @@
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 	mix-blend-mode: difference;
-	transition: all 0.1s ease;
+	transition: all 0.01s ease;
 	//transition-property: background, transform;
 	//transform-origin: 100% 100%;
 	//backdrop-filter: drop-shadow(16px 16px 20px blue);
 	//background-size: cover;
 	//background-blend-mode: hue;
 }
-
