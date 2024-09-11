@@ -1,8 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import styles from "./page.module.scss";
 import LINKS from "@constants/links";
-import FallingText from "@components/main/FallingText";
 import INFO from "@constants/info";
+import FallingText from "@components/main/FallingText";
 
 const TEXT =
 	"Web developer with over 2 years of experience, skills I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. overview careers projects activities";

@@ -19,13 +19,12 @@
 }
 
 body {
-	cursor: none;
+	/*cursor: none;*/
 }
 
 * {
 	box-sizing: border-box;
 	color: white;
-	cursor: none;
 }
 
 @layer utilities {
@@ -35,12 +34,12 @@ body {
 }
 
 a {
-	/*cursor: pointer;*/
+	cursor: pointer;
 }
 
 
 button {
-	/*cursor: pointer;*/
+	cursor: pointer;
 	outline: none;
 }
 
