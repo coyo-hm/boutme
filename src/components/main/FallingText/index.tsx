@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Matter from "matter-js";
 import styles from "./FallingText.module.scss";
-import { Link } from "@i18n/navigation";
+import { Link } from "@i18n/routing";
 
 interface Props {
 	text: string;

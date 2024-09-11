@@ -3,7 +3,7 @@
 .hamburgerIcon {
 	width: 60px;
 	height: 45px;
-	margin: 24px 8px;
+	margin: 1.5rem 0.5rem;
 	position: fixed;
 	z-index: 100;
 	transform: rotate(0deg) scale(50%);
@@ -70,7 +70,7 @@
 	background: color(green, darker);
 	width: 400px;
 	height: 100vh;
-	padding: 24px 16px;
+	padding: 1.5rem 1rem;
 }
 
 .toc {

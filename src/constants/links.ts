@@ -1,6 +1,6 @@
 const LINKS = [
 	{ label: "home", url: "/" },
-	{ label: "abouts", url: "/abouts" },
+	{ label: "overview", url: "/overview" },
 	{ label: "skills", url: "/skills" },
 	{ label: "careers", url: "/careers" },
 	{ label: "projects", url: "/projects" },

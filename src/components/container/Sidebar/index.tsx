@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
-import { Link, usePathname } from "@i18n/navigation";
+import { Link, usePathname } from "@i18n/routing";
 import LINKS from "@constants/links";
 import LocaleSwitch from "@components/container/LocaleSwitch";
 import Contact from "@components/container/Contact";

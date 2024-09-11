@@ -11,5 +11,23 @@
     "position": "FRONTEND DEVELOPER",
     "nickname": "COYO",
     "greetings": "Hello, I'm COYO, a FE developer."
+  },
+  "overviewPage": {
+    "overview": "After majoring in software and computer science, I worked as a front-end developer for two years at a startup related to security services for shared offices and apartment entrances and exits.",
+    "section2": {
+      "title": "I'm trying to go deeper into different areas of development, not just FE."
+    },
+    "section3": {
+      "title": "I like to think about the UI from <highlight>the user's perspective and improve it</highlight>.",
+      "text1": "I've had the experience of not just drawing a given screen during development, but summarizing what I'd like to see improved from the user's perspective, discussing it, and then incorporating it into the actual service.",
+      "text2": "Personally, I love infinite scrolling when viewing a list of blog posts, but as the number of posts grows, the endless scrolling can become fatiguing. To avoid this, I added pagination to <a>my personal blog</a> instead of infinite scrolling, and I always have a floating table of contents and buttons to jump to the top and bottom of the post.",
+      "text3": "I created <a>DISBOARD</a> with my teams, an integrated LMS platform with video conferencing, by combining the experience of using Zoom for virtual lectures, BlackBoard for lecture announcements, and a school portal for grading."
+    },
+    "section4": {
+      "title": "I'm trying to <highlight>automate</highlight> the pain points during development.",
+      "text1": "I have experience using git commit templates, commlint, and semantice-release to <a>standardize commit messages and use them to automate SemVer management, changelog creation, and npm deployment.</a>",
+      "text2": "I<a> solved the NextJs Large Page Data Warning by writing a js script</a> and ",
+      "text3": "<a>automating it via husky</a>."
+    }
   }
 }
