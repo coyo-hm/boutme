@@ -7,7 +7,7 @@ export default function OverviewPage() {
 	const t = useTranslations("overviewPage");
 	return (
 		<section className={styles.overviewPage}>
-			<header className={styles.title}>OVERVIEW</header>
+			<header className={"pageTitle"}>OVERVIEW</header>
 			<h2 className={styles.overview}>{t("overview")}</h2>
 			{/*<h2 className={styles.subjectTitle}>{t("section2.title")}</h2>*/}
 			<h2 className={styles.subjectTitle}>

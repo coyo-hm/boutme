@@ -25,6 +25,7 @@ body {
 * {
 	box-sizing: border-box;
 	color: white;
+	cursor: default;
 }
 
 @layer utilities {

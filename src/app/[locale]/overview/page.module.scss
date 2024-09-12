@@ -1,36 +1,43 @@
 @import "src/styles/palette";
 
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+		//transform: scale(.1);
+	}
+	21.25% {
+		opacity: 1;
+		//transform: translateY(10px);
+		//transform: scale(1.05);
+	}
+	25% {
+		transform: translateY(0);
+		//transform: scale(1);
+	}
+}
+
+
+
 .overviewPage {
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 	height: 100vh;
 	overflow: auto;
-	//background: linear-gradient(to top left, color(green, base) 30%, white 30%);
-	padding: 3rem 5rem 20rem;
+	padding: 3rem 5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-}
+	//background: linear-gradient(to top left, color(green, base) 30%, white 30%);
 
-.title {
-	position: relative;
-	color: black;
-	font-size: 4rem;
-	font-weight: 900;
-	flex: 0 0 0;
-
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		right: -1.5rem;
-		width: 3rem;
-		height: 3rem;
-		border-radius: 50%;
-		background: white;
-		//background: linear-gradient(to top left, black 30%, transparent 30%);
-		mix-blend-mode: difference;
+	@for $i from 1 through 6 {
+		& *:nth-child(#{$i}) {
+			animation: FadeIn 1s*$i linear;
+		}
 	}
+
 }
 
 .overview {
@@ -40,15 +47,18 @@
 	font-weight: 400;
 	white-space: pre-wrap;
 	word-break: keep-all;
+	animation: FadeIn 1s linear;
 }
 
 .subjectTitle {
 	color: black;
-	padding: 0 1rem;
+	padding: 1rem 1rem 0.5rem;
 	font-size: 1.5rem;
 	font-weight: 700;
 	white-space: pre-wrap;
 	word-break: keep-all;
+
+
 }
 
 .subject {
