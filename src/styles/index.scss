@@ -1,12 +1,34 @@
-.box {
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
-}
+//.box {
+//  padding: 10px;
+//  border-radius: 10px;
+//  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
+//}
+//
+//.trans-text {
+//  background-clip: text;
+//  -webkit-background-clip: text;
+//  color: transparent;
+//  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+//}
 
-.trans-text {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.pageTitle {
+  position: relative;
+  color: black;
+  font-size: 4rem;
+  font-weight: 900;
+  flex: 0 0 0;
+  padding: 0 0 1.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: white;
+    //background: linear-gradient(to top left, black 30%, transparent 30%);
+    mix-blend-mode: difference;
+  }
 }
