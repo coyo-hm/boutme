@@ -46,7 +46,7 @@ const Sidebar = () => {
 					))}
 				</div>
 				<Contact />
-				<footer className={"text-center"}>© 2024 {INFO.NICKNAME} All rights reserved.</footer>
+				<footer className={"text-center text-white"}>© 2024 {INFO.NICKNAME} All rights reserved.</footer>
 			</div>
 		</div>
 	);
