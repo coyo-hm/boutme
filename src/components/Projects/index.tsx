@@ -38,7 +38,8 @@ export default function Projects() {
 			summary: <>개인 공부한 내용 혹은 스터디한 내용들을 정리하여 공유하는 개인 블로그입니다.</>,
 			details: [
 				"NextJS + Tailwind 로 제작한 SSG 사이트입니다.",
-				"husky + commlint + semantic-release 를 통해 커밋메세지를 보고 자동으로 SemVer을 관리해주도록 해주었습니다.",
+				"Version 1은 Gatsby로 개발되어 있으며 브랜치에 따로 아카이빙하고 있습니다. 빌드 타임 개선을 위해 nextjs로 migration을 진행하였습니다.",
+				"commit message 관리에 필요성으로 인해 husky + commlint + semantic-release 를 통해 커밋메세지를 관리하고 더불어 SemVer을 메세지에 따라 자동으로 업데이트 해주도록 설정하였습니다.",
 				"다양한 애니메이션을 활용하여 지루하지 않는 사이트를 만들려고 노력했습니다.",
 				"사용자 입장에서 블로그에 꼭 추가하고 싶었던 기능들을 추가하려고 했습니다."
 			],
@@ -48,7 +49,7 @@ export default function Projects() {
 			title: "COYO-UI",
 			date: "2024.2.11 ~ current",
 			role: "1인 진행",
-			skills: ["React", "TypeScript", "Emotion", "Storybook", "Chromatic", "Husky", "Commitlint", "Semantic-Release"],
+			skills: ["React", "TypeScript", "Emotion", "Storybook", "Chromatic", "Husky", "Commitlint", "Semantic-Release", "Vite"],
 			links: [
 				{
 					type: "storybook",
