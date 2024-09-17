@@ -1,3 +1,3 @@
-export default function ActivitiesPage(){
+export default function ActivitiesCareersPage(){
 	return <></>
 }
