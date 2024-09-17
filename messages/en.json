@@ -29,5 +29,27 @@
       "text2": "I<a> solved the NextJs Large Page Data Warning by writing a js script</a> and ",
       "text3": "<a>automating it via husky</a>."
     }
+  },
+  "skillsPage": {
+    "react": {
+      "text1": "I have hands-on experience using React from design to deployment to VOC response.",
+      "text2": "Experience with a variety of state management libraries, including Redux, RTK, and Recoil, enables you to use the right state management for your business logic.",
+      "text3": "In addition to React, I have experience with a variety of frameworks, including NextJS and Gatsby."
+    },
+    "javaScript": {
+      "text1": "I'm familiar with ES6 syntax.",
+      "text2": "I have experience working with JS in a node.js environment to accomplish a variety of tasks."
+    },
+    "typeScript": {
+      "text1": "I have experience working on various projects using TypeScript and deploying them to real-world services.",
+      "text2": "I have experience leading migrations from JavaScript to TypeScript."
+    },
+    "css": {
+      "text1": "I have experience with both css in js and css preprocessors, but my personal favorite is <scss>SCSS</scss>,\nwhich is a css preprocessor.",
+      "text2": "I can use <scss>SCSS</scss>'s @mixins, functions, conditions, and other features to work with styles productively.",
+      "text3": "I can use <emotion>emotion</emotion>'s CSS Props and StyleComponents in a variety of syntaxes.",
+      "text4": "In practice, I've mostly used <scss>SCSS</scss>, <styledComponent>styled-components</styledComponent>, and <less>less</less>.",
+      "text5": "I've used <emotion>emotion</emotion> and <tailwind>tailwind</tailwind> in various personal projects, including blogs."
+    }
   }
 }

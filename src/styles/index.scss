@@ -1,3 +1,5 @@
+@import "@styles/animation";
+
 //.box {
 //  padding: 10px;
 //  border-radius: 10px;
@@ -12,12 +14,14 @@
 //}
 
 .pageTitle {
+  flex: 0 0 0;
+  padding: 0 0 1.5rem;
   position: relative;
   color: black;
   font-size: 4rem;
   font-weight: 900;
-  flex: 0 0 0;
-  padding: 0 0 1.5rem;
+  //text-shadow: 5px 5px 0 color(green, lighter);
+
 
   &::after {
     content: "";
@@ -30,5 +34,6 @@
     background: white;
     //background: linear-gradient(to top left, black 30%, transparent 30%);
     mix-blend-mode: difference;
+    animation: FadeIn 0.5s ease-in-out;
   }
 }

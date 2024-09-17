@@ -29,5 +29,27 @@
       "text2": "<a>NextJs Large Page Data Warning을 js script를 작성</a>하고 ",
       "text3": "<a>husky를 통해 자동화</a>하여 해결하였습니다."
     }
+  },
+  "skillsPage": {
+    "react": {
+      "text1": "실무에서 React를 이용해 설계부터 배포, VOC 대응까지 진행해본 경험이 있습니다.",
+      "text2": "Redux, RTK, Recoil 등 다양한 상태 관리 라이브러리 사용 경험으로 비즈니스 로직에 맞는 적절한 상태관리를 사용할 수 있습니다.",
+      "text3": "React 이외에도 NextJS와 Gatsby 등 다양한 프레임워크 사용 경험이 있습니다."
+    },
+    "javaScript": {
+      "text1": "ES6 문법에 익숙합니다.",
+      "text2": "node.js 환경에서 js를 이용해서 다양한 과제를 수행한 경험이 있습니다."
+    },
+    "typeScript": {
+      "text1": "TypeScript를 사용해서 다양한 프로젝트를 진행하여 실제 서비스에 배포한 경험이 있습니다.",
+      "text2": "JavaScript에서 TypeScript로 주도적으로 migration을 진행한 경험이 있습니다."
+    },
+    "css": {
+      "text1": "css in js 와 css preprocessor 모두 사용 경험이 있으나 개인적으로 css preprocessor인 <scss>SCSS</scss>를 가장 선호합니다.",
+      "text2": "<scss>SCSS</scss>의 @mixin, 함수, 조건 등 다양한 기능을 사용해 생산적으로 스타일 다룰 수 있습니다.",
+      "text3": "<emotion>emotion</emotion>의 CSS Prop 와 StyleComponent 등 다양한 문법으로 사용할 수 있습니다.",
+      "text4": "실무에서는 <scss>SCSS</scss>와 <styledComponent>styled-components</styledComponent>, <less>less</less>를 주로 사용하였습니다.",
+      "text5": "블로그 등 다양한 개인 프로젝트에서는 <emotion>emotion</emotion>과 <tailwind>tailwind</tailwind>를 사용했습니다."
+    }
   }
 }

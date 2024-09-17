@@ -1,45 +1,25 @@
-@import "src/styles/screen";
+@import "@styles/screen";
 
-.skills {
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	scroll-margin: 3rem 0 0;
-	padding: 5rem 0;
-}
-
-.content {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem 2rem;
-	background-color: rgba(0, 0, 0, 0.6);
+.skill {
+	//background-color: rgba(0, 0, 0, 0.6);
+	//background: inherit;
 	box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	padding: 2rem 1.5rem 1.5rem;
-}
-
-.title {
-	position: absolute;
-	top: -2rem;
-	text-shadow: 5px 5px 0 rgba(#95a9ff, 0.6);
+	border-radius: 5px;
+	padding: 2rem 0.5rem 1.5rem;
+	width: 100%;
 }
 
 .subtitle {
-	margin: 0;
+	//mix-blend-mode: hard-light;
+	text-shadow: 2px 2px 0 black;
+	margin: -4rem 0 1rem;
 	display: flex;
 	align-items: center;
 	font-size: 2.5rem;
 	font-weight: 700;
 	gap: 10px;
 
-	img {
-		height: 2.5rem;
-		width: 2.5rem;
-	}
-
+	img,
 	svg {
 		height: 2.5rem;
 		width: 2.5rem;
@@ -48,11 +28,7 @@
 	@include tablet {
 		font-size: 1.7rem;
 
-		img {
-			height: 1.7rem;
-			width: 1.7rem;
-		}
-
+		img,
 		svg {
 			height: 1.7rem;
 			width: 1.7rem;
@@ -62,11 +38,7 @@
 	@include mobile {
 		font-size: 1.25rem;
 
-		img {
-			height: 1.25rem;
-			width: 1.25rem;
-		}
-
+		img,
 		svg {
 			height: 1.25rem;
 			width: 1.25rem;
@@ -75,12 +47,13 @@
 }
 
 @mixin skill($themeColor) {
-	h1 {
+	h2 {
 		@extend .subtitle;
 		color: $themeColor;
 	}
 	ul {
-		padding: 0.2rem 0 0 4rem;
+		padding: 0 0 0 4rem;
+		color: inherit;
 	}
 
 	li {
@@ -90,7 +63,7 @@
 		white-space: pre-line;
 	}
 
-	.highlights {
+	.highlight {
 		color: $themeColor;
 	}
 }
@@ -104,6 +77,7 @@
 	@include skill(rgb(255, 255, 255));
 	grid-area: nextjs;
 }
+
 .gatsby {
 	@include skill(rgb(112, 74, 153));
 	grid-area: gatsby;
@@ -125,13 +99,9 @@
 }
 
 .tools {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	align-items: center;
-	grid-area: tools;
+	@extend .skill;
 
-	h1 {
+	h2 {
 		@extend .subtitle;
 		width: 100%;
 		color: #cbcbc9;
@@ -139,6 +109,14 @@
 		svg > * {
 			color: #cbcbc9;
 		}
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		align-items: center;
+		padding: 0 2rem;
 	}
 }
 
@@ -150,17 +128,37 @@
 	align-items: center;
 	font-weight: 600;
 
-	svg {
-		width: 2rem;
-		height: 2rem;
-	}
-
-	img {
-		width: 2rem;
-		height: 2rem;
+	img, svg {
+		width: 3rem;
+		height: 3rem;
 	}
 
 	@include mobile {
 		font-size: 0.8rem;
 	}
+}
+
+.scss {
+	font-weight: 600;
+	color: #c66395ff;
+}
+
+.emotion {
+	font-weight: 600;
+	color: #d26ac2;
+}
+
+.styledComponent {
+	font-weight: 600;
+	color: #bf4f74;
+}
+
+.less {
+	font-weight: 600;
+	color: #e2f0ff;
+}
+
+.tailwind {
+	font-weight: 600;
+	color: #0ea5e9;
 }

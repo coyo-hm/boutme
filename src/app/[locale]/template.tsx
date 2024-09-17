@@ -5,15 +5,15 @@ import { usePathname } from "next/navigation";
 
 const variants = {
 	initial: {
-		y: 50,
+		scale: 0.1,
 		opacity: 0,
 	},
 	animate: {
-		y:0,
+		scale: 1,
 		opacity: 1,
 	},
 	exit: {
-		y: 50,
+		scale: 0.1,
 		opacity: 0,
 	}
 };
@@ -21,7 +21,7 @@ const variants = {
 export default function Template({ children }: { children: React.ReactNode }) {const key = usePathname();
 	return (
 		<AnimatePresence mode="wait">
-			<motion.div key={key} variants={variants} initial={"initial"} animate={"animate"} exit={"exit"}  transition={{ type: "linear" , duration: 0.5}}>
+			<motion.div key={key} variants={variants} initial={"initial"} animate={"animate"} exit={"exit"}  transition={{ type: "linear" , duration: 1}}>
 				{children}
 			</motion.div>
 		</AnimatePresence>

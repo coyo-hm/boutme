@@ -1,25 +1,11 @@
-@import "src/styles/palette";
-
-@keyframes FadeIn {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-		//transform: scale(.1);
-	}
-	21.25% {
-		opacity: 1;
-		//transform: translateY(10px);
-		//transform: scale(1.05);
-	}
-	25% {
-		transform: translateY(0);
-		//transform: scale(1);
-	}
-}
+@import "@styles/palette";
+@import "@styles/animation";
 
 
 
 .overviewPage {
+	@include fadeInChildren(6, 2);
+
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -31,13 +17,6 @@
 	align-items: flex-start;
 	justify-content: center;
 	//background: linear-gradient(to top left, color(green, base) 30%, white 30%);
-
-	@for $i from 1 through 6 {
-		& *:nth-child(#{$i}) {
-			animation: FadeIn 1s*$i linear;
-		}
-	}
-
 }
 
 .overview {
@@ -57,8 +36,6 @@
 	font-weight: 700;
 	white-space: pre-wrap;
 	word-break: keep-all;
-
-
 }
 
 .subject {
