@@ -1,4 +1,4 @@
-@import "src/styles/palette";
+@import "@styles/palette";
 
 .hamburgerIcon {
 	width: 60px;
@@ -89,6 +89,7 @@
 		font-size: 2rem;
 		font-weight: 300;
 		transition: 0.5s ease-in-out;
+		color: white;
 
 		&:hover {
 			transform: translateY(-0.2rem);

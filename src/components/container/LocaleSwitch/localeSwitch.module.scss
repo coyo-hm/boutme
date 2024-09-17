@@ -1,4 +1,4 @@
-@import "src/styles/palette";
+@import "@styles/palette";
 
 .localeSwitch {
 	width: 100%;
@@ -6,6 +6,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: right;
+
+	* {
+		color: white;
+	}
 
 	svg path {
 		stroke: rgba(255, 255, 255, 0.8);
