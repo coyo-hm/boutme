@@ -5,14 +5,14 @@ import INFO from "@constants/info";
 import FallingText from "@components/main/FallingText";
 
 const TEXT =
-	"Web developer with over 2 years of experience, skills I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. overview careers projects activities";
+	"Web developer with over 2 years of experience, skills I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. overview activities projects careers";
 
 export default function MainPage() {
 	const locale = useLocale()
 	const t = useTranslations("mainPage")
 	return (
 		<section className={styles.mainPage}>
-			<FallingText text={TEXT} highlightTexts={LINKS} />
+			<FallingText text={TEXT} highlightTexts={[...LINKS, { label: "careers", url: "/activities" }, { label: "activities", url: "/activities" }]} />
 			<div className={styles.box}>
 				<h1 className={styles.name}>{INFO.NICKNAME}</h1>
 				<div className={styles.line} />
