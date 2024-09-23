@@ -51,5 +51,30 @@
       "text4": "In practice, I've mostly used <scss>SCSS</scss>, <styledComponent>styled-components</styledComponent>, and <less>less</less>.",
       "text5": "I've used <emotion>emotion</emotion> and <tailwind>tailwind</tailwind> in various personal projects, including blogs."
     }
+  },
+  "projectsPage": {
+    "blog": {
+      "role": "Solo development",
+      "summary": "This is a personal blog where I share my personal studies and research.",
+      "detail1": "This blog has received about <highlight>5K views</highlight> from January through September 2024, and I measure those views using <highlight>GA4</highlight>.\n<post>The related post</post> is on the blog and is the second most viewed post.",
+      "detail2": "This blog is an SSG site built with NextJS + Tailwind.",
+      "detail3": "Due to the need to manage commit messages, I used husky + commlint + semantic-release to manage commit messages and also set up SemVer to <highlight>automatically update based on the message</highlight>. \bAlso made it into a series, and the posts in <series>that series</series> are all getting a lot of views.",
+      "detail4": "I migrated to <highlight>nextjs</highlight> to improve build times.",
+      "detail5": "Version 1 is being developed with Gatsby and is being archived separately in a <branch>branch</branch>.",
+      "detail6": "I tried to make it more convenient and fun for users by using various animations such as marquee animation for tag, carousel for recent post, horizontal scroll and flipped card."
+
+    },
+    "coyoui":{
+      "role": "Solo development",
+      "summary": "This is a UI Kit where I've created UI components that I think I'll use often during a project. I'm adding animations that I use frequently in my blog or other projects."
+    },
+    "kanbanBoard": {
+      "role": "Solo development",
+      "summary": "A Kanban board site cloned from Notion Board using React-beautiful-dnd."
+    },
+    "disboard": {
+      "role": "5-person development (1 AI, 1 BE, 2 FE, 1 MOBILE, myself in FE)",
+      "summary": "LMS services to help you make sense of the increase in remote teaching in the aftermath of COVID-19."
+    }
   }
 }

@@ -1,11 +1,11 @@
 import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
-import ProjectLink, { ProjectLinkProps } from "@components/Projects/ProjectLink";
+// import ProjectLink, { ProjectLinkProps } from "@components/projects/ProjectLink";
 import styles from "./projects.module.scss";
 
-import IconCalender from "@assets/calender.svg";
-import IconPerson from "@assets/person.svg";
-import IconCheck from "@assets/check.svg";
+import IconCalender from "@icons/calender.svg";
+import IconPerson from "@icons/person.svg";
+import IconCheck from "@icons/check.svg";
 
 export interface ProjectProps {
 	logo?: ReactNode;
@@ -14,18 +14,18 @@ export interface ProjectProps {
 	date: string;
 	role: string;
 	skills: string[];
-	links: ProjectLinkProps[];
+	// links: ProjectLinkProps[];
 	summary: ReactNode;
 	details: string[];
 }
 
-export default function ProjectBox({ logo, title, date, role, skills, links, summary, details, sample }: ProjectProps) {
+export default function ProjectBox({ logo, title, date, role, skills,  summary, details, sample }: ProjectProps) {
 	return (
 		<div className={styles.projectContainer} id={title}>
 			<ul className={styles.projectLinks}>
-				{links.map((link, idx) => (
-					<ProjectLink {...link} key={idx} />
-				))}
+				{/*{links.map((link, idx) => (*/}
+				{/*	<ProjectLink {...link} key={idx} />*/}
+				{/*))}*/}
 			</ul>
 			<div className={styles.projectBox}>
 				<h1 className={styles.projectTitle}>{logo ? logo : title}</h1>
