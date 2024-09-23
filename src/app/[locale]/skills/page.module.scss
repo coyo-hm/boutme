@@ -1,14 +1,12 @@
+@import "@styles/common";
 @import "@styles/animation";
 
 .skillsPage {
-	width: 100%;
-	height: 100vh;
-	overflow: auto;
-	padding: 3rem 5rem 20rem;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
+	@include page;
+}
+
+.title {
+	@include pageTitle;
 }
 
 @include keyframes(showUp) {

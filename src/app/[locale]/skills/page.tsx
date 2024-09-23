@@ -6,7 +6,7 @@ import Tools from "@components/skills/Skill/Tools";
 export default function SkillsPage() {
 	return (
 		<section className={styles.skillsPage}>
-			<header className={"pageTitle"}>SKILLS</header>
+			<header className={styles.title}>SKILLS</header>
 			<div className={styles.skills}>
 				{SKILLS.map(({ key, ...rest }, index) => (
 					<Skill key={key} {...rest} id={key} />
