@@ -1,0 +1,11 @@
+@import "@styles/common";
+@import "@styles/palette";
+
+.activitiesPage {
+  @include page;
+  //background: linear-gradient(to top left, black 60%, white 30%);
+}
+
+.title {
+  @include pageTitle;
+}

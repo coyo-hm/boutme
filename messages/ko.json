@@ -52,6 +52,25 @@
       "text5": "블로그 등 다양한 개인 프로젝트에서는 <emotion>emotion</emotion>과 <tailwind>tailwind</tailwind>를 사용했습니다."
     }
   },
+  "careersPage": {
+    "totalDay": "개발 경력 2년",
+    "career1": {
+      "company": "슈프리마 모카시스템",
+      "position": "[인턴] 코어 개발 팀/ 웹 프론트엔드"
+    },
+    "career2": {
+      "company": "슈프리마 모카시스템",
+      "position": "코어 개발 팀/ 웹 프론트엔드"
+    }
+  },
+  "activitiesPage": {
+    "activity1": {
+      "name": "네이버 부스트 캠프",
+      "position": "8기 웹개발 챌린지",
+      "date": "2023.7 - 2023.8",
+      "description": "네이버커넥트에서 진행하는 웹 개발 교육 프로그램"
+    }
+  },
   "projectsPage": {
     "blog": {
       "role": "1인 개발",

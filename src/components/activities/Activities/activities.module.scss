@@ -1,0 +1,28 @@
+@import "@styles/palette";
+@import "@styles/animation";
+
+.activities {
+	border-left: 10px solid color(green, base);
+	padding: 1rem 2rem;
+	position: relative;
+
+	@for $i from 1 through 1 {
+		& li:nth-child(#{$i}) {
+			animation: FadeIn 1s * $i + 2s ease-in-out;
+			-webkit-animation: FadeIn 1s * $i + 2s ease-in-out;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -20px;
+		left: -10px;
+		width: 0;
+		height: 0;
+		border-top: 30px solid color(green, base);
+		border-right: 20px solid transparent;
+		border-bottom: 0 solid transparent;
+		border-left: 0 solid transparent;
+	}
+}

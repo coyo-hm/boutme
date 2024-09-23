@@ -52,6 +52,14 @@
       "text5": "I've used <emotion>emotion</emotion> and <tailwind>tailwind</tailwind> in various personal projects, including blogs."
     }
   },
+  "activitiesPage": {
+    "activity1": {
+      "name": "Naver Boost Camp",
+      "position": "8th Web Development Challenge",
+      "date": "2023.7 - 2023.8",
+      "description": "Web development training programs hosted by NAVER Connect"
+    }
+  },
   "projectsPage": {
     "blog": {
       "role": "Solo development",
