@@ -1,0 +1,147 @@
+@import "@styles/palette";
+@import "@styles/screen";
+
+.activeProject {
+	width: 100%;
+	max-height: calc(100vh - 20rem);
+	border-radius: 5px;
+	padding: 1.5rem 0;
+	box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	.title {
+		font-size: 3rem;
+		line-height: 3.25rem;
+		font-weight: 700;
+		font-style: italic;
+		color: white;
+		padding: 0 2rem;
+
+		img,
+		svg {
+			height: 3.25rem;
+			width: auto;
+		}
+	}
+
+	hr {
+		width: calc(100% - 4rem);
+		height: 4px;
+		border: none;
+		background-color: color(green, base);
+	}
+
+	.info {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 2rem;
+
+		svg {
+			width: 1rem;
+			height: 1rem;
+		}
+
+		span {
+			color: white;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+	}
+
+	.content {
+		column-count: 2;
+		column-gap: 1.5em;
+		padding: 1rem 1rem 1rem 2rem;
+		margin: 0 1rem 0 0;
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: rgb(0, 0, 0);
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: rgb(0, 0, 0, 0);
+		}
+
+		@include mobile {
+			column-count: 1;
+		}
+	}
+
+	.summary {
+		width: 100%;
+		padding: 0 3rem 2rem;
+		text-align: center;
+		font-style: italic;
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.8);
+		word-break: keep-all;
+		white-space: pre-line;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding: 1rem 0;
+	}
+
+	.details {
+		li {
+			padding: 0.5rem 0 0;
+
+			svg {
+				flex-shrink: 0;
+				width: 1.5rem;
+				height: 1.5rem;
+				display: inline-block;
+
+				* {
+					stroke: rgb(245, 158, 11);
+				}
+			}
+
+			p {
+				color: white;
+				white-space: pre-line;
+			}
+		}
+
+		.highlight {
+			color: color(green, "extreme-lighter");
+		}
+	}
+
+	.skills {
+		padding: 0 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+
+		li {
+			border: 1px solid;
+			padding: 2px 8px;
+			border-radius: 50px;
+			font-size: 0.7rem;
+			color: white;
+
+			&::before {
+				content: "#";
+				padding-right: 5px;
+			}
+		}
+	}
+}

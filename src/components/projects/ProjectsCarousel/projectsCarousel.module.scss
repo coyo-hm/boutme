@@ -1,0 +1,27 @@
+.projectsCarousel {
+	width: 100%;
+}
+
+.projectsIndex {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.2rem;
+	padding: 0 0 0.5rem;
+
+	button {
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+		background-color: rgba(0, 0, 0, 1);
+		color: white;
+		text-align: center;
+		line-height: 1.5rem;
+		font-size: 0.8rem;
+	}
+
+}
+
+.activeProject {
+}
+
