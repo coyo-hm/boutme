@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import React from "react";
 import "@styles/globals.css";
-import "@styles/index.scss";
 
 
 // const font = Montserrat({ subsets: ["latin"] });

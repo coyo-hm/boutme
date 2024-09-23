@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import styles from "./skill.module.scss";
 import { useTranslations } from "next-intl";
+import styles from "./skill.module.scss";
 
 interface Props {
 	id: string;
@@ -13,7 +13,7 @@ const Skill = ({ id, icon, label, description }: Props) => {
 	const t = useTranslations("skillsPage");
 	return (
 		<div className={`${styles.skill} ${styles[id]}`}>
-			<h2 className={styles.title}>
+			<h2>
 				{icon}
 				{label}
 			</h2>
@@ -26,7 +26,7 @@ const Skill = ({ id, icon, label, description }: Props) => {
 							emotion: chunks => <span className={styles.emotion}>{chunks}</span>,
 							scss: chunks => <span className={styles.scss}>{chunks}</span>,
 							styledComponent: chunks => <span className={styles.styledComponent}>{chunks}</span>,
-							less: chunks => <span className={styles.less}>{chunks}</span>,
+							less: chunks => <span className={styles.less}>{chunks}</span>
 						})}
 					</li>
 				))}
