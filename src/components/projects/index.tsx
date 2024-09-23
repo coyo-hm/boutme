@@ -1,18 +1,18 @@
 import Image from "next/image";
-import ProjectBox, { ProjectProps } from "@components/Projects/ProjectBox";
+import ProjectBox, { ProjectProps } from "@components/projects/ProjectBox";
 import PageTitle from "@components/PageTitle";
 import styles from "./projects.module.scss";
 
-import LogoCOYOLOG from "@assets/coyo-log.svg";
-import ImgCOYOLOG from "@assets/coyo-log-sample.png";
-import ImgBoard from "@assets/board-card-dnd.gif";
-import ImgUI from "@assets/coyo-ui-sample.png";
-import LogoDisboard from "@assets/disboard.png";
-import ImgDisboard from "@assets/disboard-sample.png";
+import LogoCOYOLOG from "@projects/coyo-log.svg";
+import ImgCOYOLOG from "@projects/coyo-log-sample.png";
+import ImgBoard from "@projects/board-card-dnd.gif";
+import ImgUI from "@projects/coyo-ui-sample.png";
+import LogoDisboard from "@projects/disboard.png";
+import ImgDisboard from "@projects/disboard-sample.png";
 
 
 export default function Projects() {
-	const PROJECT_DATA: ProjectProps[] = [
+	const PROJECT_DATA = [
 		{
 			logo: <LogoCOYOLOG height={32} width={"auto"} />,
 			title: "blog",

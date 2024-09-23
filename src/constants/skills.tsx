@@ -1,17 +1,17 @@
 import Image from "next/image";
 
-import LogoReact from "@assets/react.png";
-import LogoJavaScript from "@assets/javaScript.png";
-import LogoTypeScript from "@assets/typeScript.png";
-import LogoCSS from "@assets/css.png";
-import LogoGithub from "@assets/github.svg";
-import LogoGit from "@assets/git.png";
-import LogoJira from "@assets/jira.png";
-import LogoConfluence from "@assets/confluence.png";
-import LogoSlack from "@assets/slack.png";
-import LogoNotion from "@assets/notion.webp";
-import LogoFigma from "@assets/figma.png";
-import LogoStorybook from "@assets/storybook.svg";
+import LogoReact from "@logos/react.png";
+import LogoJavaScript from "@logos/javaScript.png";
+import LogoTypeScript from "@logos/typeScript.png";
+import LogoCSS from "@logos/css.png";
+import LogoGithub from "@logos/github.svg";
+import LogoGit from "@logos/git.png";
+import LogoJira from "@logos/jira.png";
+import LogoConfluence from "@logos/confluence.png";
+import LogoSlack from "@logos/slack.png";
+import LogoNotion from "@logos/notion.webp";
+import LogoFigma from "@logos/figma.png";
+import LogoStorybook from "@logos/storybook.svg";
 
 export const SKILLS = [
 	// {
