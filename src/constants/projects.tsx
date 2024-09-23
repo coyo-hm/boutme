@@ -8,6 +8,9 @@ import ImgBoard from "@projects/board-card-dnd.gif";
 import LogoDisboard from "@projects/disboard.png";
 import ImgDisboard from "@projects/disboard-sample.png";
 import BlogDetail from "@components/projects/ProjectDetails/BlogDetail";
+import COYOUIDetail from "@components/projects/ProjectDetails/COYOUIDetail";
+import KanbanBoardDetail from "@components/projects/ProjectDetails/KanbanBoardDetail";
+import DisboardDetail from "@components/projects/ProjectDetails/DisboardDetail";
 
 export type ProjectLinkType = {
 	type: "home" | "git" | "npm" | "storybook" | "notion" | "etc";
@@ -85,10 +88,8 @@ export const PROJECTS: ProjectType[] = [
 				url: "https://www.npmjs.com/package/coyo-ui"
 			}
 		],
-		details: [
-			// "Storybook을 활용한 UI Kit 입니다.",
-			// "husky + commlint + semantic-release 를 통해 커밋메세지를 통해 SemVer는 물론 Change-Log, Release Note 들을 자동으로 관리해주도록 해주었습니다."
-		],
+		details: <COYOUIDetail />,
+
 		sample: ImgUI
 	},
 	{
@@ -114,11 +115,7 @@ export const PROJECTS: ProjectType[] = [
 				url: "https://github.com/coyo-hm/Simple-Kanban-Board"
 			}
 		],
-		details: [
-			// "라이브러리를 이용해서 매끄러운 보드를 만들려고 노력했습니다.",
-			// "react-hook-form을 이용해서 더욱 간편하고 효과적으로 입력을 관리하도록 했습니다.",
-			// "사용자가 생성한 보드와 카드, 지정한 색상 정보는 localStorage에 저장해서 데이터가 유지되도록 했습니다."
-		],
+		details: <KanbanBoardDetail />,
 		sample: ImgBoard
 	},
 	{
@@ -139,10 +136,7 @@ export const PROJECTS: ProjectType[] = [
 				url: "https://softcon.ajou.ac.kr/works/works_prev.asp?uid=430&wTerm=2021-1"
 			}
 		],
-		details: [
-			// "React로 만든 첫번째 프로젝트로 강의 외의 모든 기능을 개발하였습니다.",
-			// "Chartjs를 활용해서 학생과 강의자에게 이해도 차트를 보다 용이하게 제공하려고 노력했습니다."
-		],
+		details: <DisboardDetail />,
 		sample: ImgDisboard
 	}
 ];

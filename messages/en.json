@@ -74,7 +74,9 @@
     },
     "coyoui":{
       "role": "Solo development",
-      "summary": "This is a UI Kit where I've created UI components that I think I'll use often during a project. I'm adding animations that I use frequently in my blog or other projects."
+      "summary": "This is a UI Kit where I've created UI components that I think I'll use often during a project. I'm adding animations that I use frequently in my blog or other projects.",
+      "detail1": "UI Kit utilizing <highlight>Storybook</highlight>.",
+      "detail2": "I used husky + commlint + semantic-release to automatically manage SemVer as well as change-logs and release notes via commit messages."
     },
     "kanbanBoard": {
       "role": "Solo development",

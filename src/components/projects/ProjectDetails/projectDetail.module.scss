@@ -15,6 +15,18 @@
 	}
 }
 
+.coyoui {
+	@include details;
+}
+
+.kanbanBoard {
+	@include details;
+}
+
+.disboard {
+	@include details;
+}
+
 .highlight {
 	color: #ffd501;
 }
