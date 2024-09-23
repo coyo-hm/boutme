@@ -1,6 +1,5 @@
 import Image from "next/image";
-import ProjectBox, { ProjectProps } from "@components/projects/ProjectBox";
-import PageTitle from "@components/PageTitle";
+import ProjectBox from "@components/projects/ProjectBox";
 import styles from "./projects.module.scss";
 
 import LogoCOYOLOG from "@projects/coyo-log.svg";
@@ -131,7 +130,7 @@ export default function Projects() {
 	return (
 		<div id={"projects"} className={styles.projects}>
 			<div className={styles.content}>
-				<PageTitle className={styles.title}>Projects</PageTitle>
+				{/*<PageTitle className={styles.title}>Projects</PageTitle>*/}
 				<div className={styles.projectsContainer}>
 					{PROJECT_DATA.map(project => (
 						<ProjectBox {...project} key={project.title}  />

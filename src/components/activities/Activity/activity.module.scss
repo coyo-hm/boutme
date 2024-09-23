@@ -1,0 +1,32 @@
+@import "@styles/palette";
+
+.activity {
+	padding: 1rem 0;
+}
+
+.name {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: black;
+	text-shadow: 2px 2px 0 color(green, "extreme-lighter");
+}
+
+.position {
+	display: inline-block;
+	padding-right: 0.5rem;
+	font-size: 1.2rem;
+	color: color(green, darker);
+}
+
+.date {
+	display: inline-block;
+	font-weight: 300;
+	font-size: 0.8rem;
+}
+
+.description {
+	font-weight: 300;
+	font-size: 1rem;
+	word-break: keep-all;
+}

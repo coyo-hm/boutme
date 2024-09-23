@@ -1,0 +1,11 @@
+@import "@styles/common";
+
+.careers {
+
+}
+
+.title {
+  @include pageTitle;
+  color: white;
+  mix-blend-mode: difference;
+}
