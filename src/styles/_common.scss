@@ -1,3 +1,5 @@
+@import "src/styles/screen";
+
 @mixin page {
   width: 100%;
   max-width: 1200px;
@@ -28,5 +30,10 @@
     border-radius: 50%;
     background: white;
     mix-blend-mode: difference;
+  }
+
+
+  @include mobile {
+    font-size: 3rem;
   }
 }
