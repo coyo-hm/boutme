@@ -21,6 +21,8 @@
     "baseUrl": ".",
     "paths": {
       "@icons/*": ["./public/assets/icons/*"],
+      "@logos/*": ["./public/assets/logos/*"],
+      "@projects/*": ["./public/assets/projects/*"],
       "@assets/*": ["./public/assets/*"],
       "@public/*": ["./public/*"],
       "@commonComponents/*": ["./src/components/common/*"],

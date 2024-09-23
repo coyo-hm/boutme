@@ -5,9 +5,9 @@ import styles from "./contact.module.scss";
 
 import IconCopy from "@icons/copy.svg";
 import IconLink from "@icons/link-external.svg";
-import IconMail from "@assets/mail.svg";
-import IconBlog from "@assets/star.svg";
-import IconGithub from "@assets/github.svg";
+import IconMail from "@icons/mail.svg";
+import IconBlog from "@icons/star.svg";
+import IconGithub from "@logos/github.svg";
 import INFO from "@constants/info";
 
 
