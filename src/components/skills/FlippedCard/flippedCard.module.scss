@@ -1,0 +1,79 @@
+
+.flippedCard {
+	background-color: transparent;
+	min-width: 200px;
+	height: 300px;
+	flex: 1 1 0;
+	//border: 1px solid #f1f1f1;
+
+	.inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	&:hover .inner {
+		transform: rotateY(180deg);
+	}
+
+	.side {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		border-radius: 0.5rem;
+		box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
+	}
+
+	.front {
+		@extend .side;
+		//background-color: rgba(0, 0, 0, 1);
+		color: black;
+		font-size: 2.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+
+		img, svg {
+			height: auto;
+			width: 50%;
+		}
+	}
+
+	.back {
+		@extend .side;
+		background-color: dodgerblue;
+		color: white;
+		transform: rotateY(180deg);
+	}
+}
+
+.react {
+	//@include skill(rgb(4, 182, 246));
+	grid-area: react;
+}
+
+.nextjs {
+	//@include skill(rgb(255, 255, 255));
+	grid-area: nextjs;
+}
+.gatsby {
+	//@include skill(rgb(112, 74, 153));
+	grid-area: gatsby;
+}
+
+.javaScript {
+	//@include skill(rgb(238, 215, 33));
+	grid-area: javaScript;
+}
+
+.typeScript {
+	//@include skill(rgb(49, 117, 191));
+	grid-area: typeScript;
+}

@@ -1,0 +1,9 @@
+@import "@styles/common";
+
+.projectsPage {
+  @include page;
+}
+
+.title {
+  @include pageTitle;
+}

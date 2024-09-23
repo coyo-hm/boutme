@@ -1,0 +1,194 @@
+@import "src/styles";
+@import "src/styles/screen";
+
+.projects {
+	width: 100%;
+	min-height: 100vh;
+	padding: 5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	max-width: 1000px;
+}
+
+.title {
+	text-shadow: 5px 5px 0 rgb(29, 78, 216);
+	margin: 30px 0 15px;
+}
+
+.icon {
+	display: flex;
+	gap: 10px;
+
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+.projectsContqainer {
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	:nth-child(odd) > .projectBox {
+		background-color: rgba(0, 0, 0, 0.6);
+		color: rgba(255, 255, 255, 1);
+		border-color: rgba(255, 255, 255, 1);
+
+		svg > * {
+			color: rgba(255, 255, 255, 1);
+		}
+
+		hr {
+			background-color: rgba(255, 255, 255, 1);
+		}
+	}
+
+	:nth-child(even) > .projectBox {
+		background-color: rgba(255, 255, 255, 0.08);
+
+		h1 {
+			//text-shadow: 3px 3px 3px rgb(255, 255, 255);
+		}
+
+		svg > * {
+			//color: rgba(0, 0, 0, 1);
+			color: rgba(255, 255, 255, 1);
+		}
+
+		* {
+			//color: rgba(0, 0, 0, 1);
+			//border-color: rgba(0, 0, 0, 1);
+		}
+
+		hr {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+	}
+}
+
+.projectContainer {
+	display: flex;
+}
+
+.projectLinks {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	padding: 15px 0 10px;
+
+	a {
+		@extend .icon;
+		border-radius: 5px 0 0 5px;
+		display: flex;
+		justify-content: flex-end;
+		padding: 8px 5px 8px 10px;
+		background-color: rgb(245, 158, 11);
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+
+		&:hover {
+			transform: translateY(-2px);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	a.home {
+		background-color: rgb(29, 78, 216);
+	}
+
+	a.git {
+		background-color: rgb(0, 0, 0);
+	}
+
+	a.npm {
+		background-color: rgb(196, 55, 54);
+	}
+
+	a.storybook {
+		background-color: rgba(245, 69, 129, 0.8);
+	}
+}
+
+.projectBox {
+	@extend .box;
+	display: grid;
+	grid-template-areas: "title" "image" "info";
+	gap: 15px;
+	padding: 0 20px 20px;
+	align-items: center;
+	@include desktop {
+		grid-template-areas: "title title" "image info";
+	}
+}
+
+.projectTitle {
+	grid-area: title;
+	margin: -1.8rem 0 10px;
+	font-size: 2.3rem;
+	font-weight: 700;
+	font-style: italic;
+
+	img {
+		height: 3rem;
+		width: auto;
+	}
+
+	svg {
+		height: 3rem;
+		width: auto;
+	}
+}
+
+.projectImage {
+	grid-area: image;
+}
+
+.projectInfo {
+	grid-area: info;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	flex: 1 1 0;
+}
+
+.summary {
+	white-space: pre-wrap;
+	word-break: keep-all;
+}
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+
+	li {
+		border: 1px solid;
+		padding: 2px 8px;
+		border-radius: 50px;
+		font-size: 0.7rem;
+	}
+}
+
+.details {
+	li {
+		display: flex;
+		gap: 5px;
+		line-height: 1.5rem;
+
+		svg {
+			flex-shrink: 0;
+			width: 1.5rem;
+			height: 1.5rem;
+
+			* {
+				stroke: rgb(245, 158, 11);
+			}
+		}
+	}
+}

@@ -1,0 +1,164 @@
+@import "@styles/screen";
+
+.skill {
+	//background-color: rgba(0, 0, 0, 0.6);
+	//background: inherit;
+	box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	padding: 2rem 0.5rem 1.5rem;
+	width: 100%;
+}
+
+.subtitle {
+	//mix-blend-mode: hard-light;
+	text-shadow: 2px 2px 0 black;
+	margin: -4rem 0 1rem;
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
+	font-weight: 700;
+	gap: 10px;
+
+	img,
+	svg {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+
+	@include tablet {
+		font-size: 1.7rem;
+
+		img,
+		svg {
+			height: 1.7rem;
+			width: 1.7rem;
+		}
+	}
+
+	@include mobile {
+		font-size: 1.25rem;
+
+		img,
+		svg {
+			height: 1.25rem;
+			width: 1.25rem;
+		}
+	}
+}
+
+@mixin skill($themeColor) {
+	h2 {
+		@extend .subtitle;
+		color: $themeColor;
+	}
+	ul {
+		padding: 0 0 0 4rem;
+		color: inherit;
+	}
+
+	li {
+		list-style-type: disc;
+		list-style-position: outside;
+		word-break: keep-all;
+		white-space: pre-line;
+	}
+
+	.highlight {
+		color: $themeColor;
+	}
+}
+
+.react {
+	@include skill(rgb(4, 182, 246));
+	grid-area: react;
+}
+
+.nextjs {
+	@include skill(rgb(255, 255, 255));
+	grid-area: nextjs;
+}
+
+.gatsby {
+	@include skill(rgb(112, 74, 153));
+	grid-area: gatsby;
+}
+
+.javaScript {
+	@include skill(rgb(238, 215, 33));
+	grid-area: javaScript;
+}
+
+.typeScript {
+	@include skill(rgb(49, 117, 191));
+	grid-area: typeScript;
+}
+
+.css {
+	@include skill(rgb(39, 75, 220));
+	grid-area: css;
+}
+
+.tools {
+	@extend .skill;
+
+	h2 {
+		@extend .subtitle;
+		width: 100%;
+		color: #cbcbc9;
+
+		svg > * {
+			color: #cbcbc9;
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		align-items: center;
+		padding: 0 2rem;
+	}
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+
+	img, svg {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	@include mobile {
+		font-size: 0.8rem;
+	}
+}
+
+.scss {
+	font-weight: 600;
+	color: #c66395ff;
+}
+
+.emotion {
+	font-weight: 600;
+	color: #d26ac2;
+}
+
+.styledComponent {
+	font-weight: 600;
+	color: #bf4f74;
+}
+
+.less {
+	font-weight: 600;
+	color: #e2f0ff;
+}
+
+.tailwind {
+	font-weight: 600;
+	color: #0ea5e9;
+}

@@ -1,0 +1,95 @@
+{
+  "locale": {
+    "placeholder": "Lang",
+    "ko": "한국어",
+    "en": "en"
+  },
+  "container": {
+    "copyComplete": "The email has been copied to the clipboard."
+  },
+  "mainPage": {
+    "position": "FRONTEND DEVELOPER",
+    "nickname": "COYO",
+    "greetings": "Hello, I'm COYO, a FE developer."
+  },
+  "overviewPage": {
+    "overview": "After majoring in software and computer science, I worked as a front-end developer for two years at a startup related to security services for shared offices and apartment entrances and exits.",
+    "section2": {
+      "title": "I'm trying to go deeper into different areas of development, not just FE."
+    },
+    "section3": {
+      "title": "I like to think about the UI from <highlight>the user's perspective and improve it</highlight>.",
+      "text1": "I've had the experience of not just drawing a given screen during development, but summarizing what I'd like to see improved from the user's perspective, discussing it, and then incorporating it into the actual service.",
+      "text2": "Personally, I love infinite scrolling when viewing a list of blog posts, but as the number of posts grows, the endless scrolling can become fatiguing. To avoid this, I added pagination to <a>my personal blog</a> instead of infinite scrolling, and I always have a floating table of contents and buttons to jump to the top and bottom of the post.",
+      "text3": "I created <a>DISBOARD</a> with my teams, an integrated LMS platform with video conferencing, by combining the experience of using Zoom for virtual lectures, BlackBoard for lecture announcements, and a school portal for grading."
+    },
+    "section4": {
+      "title": "I'm trying to <highlight>automate</highlight> the pain points during development.",
+      "text1": "I have experience using git commit templates, commlint, and semantice-release to <a>standardize commit messages and use them to automate SemVer management, changelog creation, and npm deployment.</a>",
+      "text2": "I<a> solved the NextJs Large Page Data Warning by writing a js script</a> and ",
+      "text3": "<a>automating it via husky</a>."
+    }
+  },
+  "skillsPage": {
+    "react": {
+      "text1": "I have hands-on experience using React from design to deployment to VOC response.",
+      "text2": "Experience with a variety of state management libraries, including Redux, RTK, and Recoil, enables you to use the right state management for your business logic.",
+      "text3": "In addition to React, I have experience with a variety of frameworks, including NextJS and Gatsby."
+    },
+    "javaScript": {
+      "text1": "I'm familiar with ES6 syntax.",
+      "text2": "I have experience working with JS in a node.js environment to accomplish a variety of tasks."
+    },
+    "typeScript": {
+      "text1": "I have experience working on various projects using TypeScript and deploying them to real-world services.",
+      "text2": "I have experience leading migrations from JavaScript to TypeScript."
+    },
+    "css": {
+      "text1": "I have experience with both css in js and css preprocessors, but my personal favorite is <scss>SCSS</scss>,\nwhich is a css preprocessor.",
+      "text2": "I can use <scss>SCSS</scss>'s @mixins, functions, conditions, and other features to work with styles productively.",
+      "text3": "I can use <emotion>emotion</emotion>'s CSS Props and StyleComponents in a variety of syntaxes.",
+      "text4": "In practice, I've mostly used <scss>SCSS</scss>, <styledComponent>styled-components</styledComponent>, and <less>less</less>.",
+      "text5": "I've used <emotion>emotion</emotion> and <tailwind>tailwind</tailwind> in various personal projects, including blogs."
+    }
+  },
+  "activitiesPage": {
+    "activity1": {
+      "name": "Naver Boost Camp",
+      "position": "8th Web Development Challenge",
+      "date": "2023.7 - 2023.8",
+      "description": "Web development training programs hosted by NAVER Connect"
+    }
+  },
+  "projectsPage": {
+    "blog": {
+      "role": "Solo development",
+      "summary": "This is a personal blog where I share my personal studies and research.",
+      "detail1": "This blog has received about <highlight>5K views</highlight> from January through September 2024, and I measure those views using <highlight>GA4</highlight>.\n<post>The related post</post> is on the blog and is the second most viewed post.",
+      "detail2": "This blog is an SSG site built with NextJS + Tailwind.",
+      "detail3": "Due to the need to manage commit messages, I used husky + commlint + semantic-release to manage commit messages and also set up SemVer to <highlight>automatically update based on the message</highlight>. \bAlso made it into a series, and the posts in <series>that series</series> are all getting a lot of views.",
+      "detail4": "I migrated to <highlight>nextjs</highlight> to improve build times.",
+      "detail5": "Version 1 is being developed with Gatsby and is being archived separately in a <branch>branch</branch>.",
+      "detail6": "I tried to make it more convenient and fun for users by using various animations such as marquee animation for tag, carousel for recent post, horizontal scroll and flipped card."
+
+    },
+    "coyoui":{
+      "role": "Solo development",
+      "summary": "This is a UI Kit where I've created UI components that I think I'll use often during a project. I'm adding animations that I use frequently in my blog or other projects.",
+      "detail1": "UI Kit utilizing <highlight>Storybook</highlight>.",
+      "detail2": "I used husky + commlint + semantic-release to automatically manage SemVer as well as change-logs and release notes via commit messages."
+    },
+    "kanbanBoard": {
+      "role": "Solo development",
+      "summary": "A Kanban board site cloned from Notion Board using React-beautiful-dnd.",
+      "detail1": "I tried to create a smooth board using the React-beautiful-dnd library.",
+      "detail2": "I used react-hook-form to make it easier and more effective to manage input.",
+      "detail3": "The boards and cards that users created, as well as the color information they specified, were stored in localStorage to ensure that the data was persistent."
+    },
+    "disboard": {
+      "role": "5-person development (1 AI, 1 BE, 2 FE, 1 MOBILE, myself in FE)",
+      "summary": "LMS services to help you make sense of the increase in remote teaching in the aftermath of COVID-19.",
+      "detail1": "This was my first project in React, and I developed all of the non-course features.",
+      "detail2": "I tried to utilize Chartjs to make it easier for students and instructors to provide comprehension charts."
+    }
+  }
+}

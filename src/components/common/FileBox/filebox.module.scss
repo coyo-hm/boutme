@@ -1,0 +1,31 @@
+.fileBox {
+	position: absolute;
+	overflow: hidden;
+	width: fit-content;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.fileBoxHeader {
+	display: flex;
+	gap: 6px;
+	background: black;
+	width: 100%;
+	padding: 0.7rem;
+
+	li {
+		border-radius: 100%;
+		width: 0.7rem;
+		height: 0.7rem;
+		background-color: #e3b148;
+
+		&:first-child {
+			background-color: #d80e0e;
+		}
+
+		&:last-child {
+			background-color: green;
+		}
+	}
+}

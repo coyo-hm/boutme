@@ -1,0 +1,43 @@
+@import "@styles/palette";
+
+.projectLink {
+	display: flex;
+	gap: 10px;
+	justify-content: flex-start;
+	border-radius: 10px;
+	padding: 8px 12px;
+	background-color: rgb(245, 158, 11);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	color: white;
+
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&:hover {
+		transform: translateY(-2px);
+		transition: all 0.3s ease-in-out;
+	}
+
+	&.home {
+		background-color: color(green, base);
+	}
+
+	&.git {
+		background-color: rgb(0, 0, 0);
+	}
+
+	&.npm {
+		background-color: rgb(196, 55, 54);
+	}
+
+	&.storybook {
+		background-color: rgba(245, 69, 129, 0.8);
+	}
+
+	& > span {
+		cursor: inherit;
+		flex: 1 1 0;
+	}
+}

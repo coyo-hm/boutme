@@ -1,0 +1,39 @@
+@import "src/styles/screen";
+
+@mixin page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin pageTitle {
+  flex: 0 0 0;
+  padding: 0 0 1.5rem;
+  position: relative;
+  color: black;
+  font-size: 4rem;
+  font-weight: 900;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: white;
+    mix-blend-mode: difference;
+  }
+
+
+  @include mobile {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,55 @@
+@import "@styles/palette";
+@import "@styles/common";
+@import "@styles/animation";
+
+.overviewPage {
+	@include page;
+	@include fadeInChildren(6, 2);
+	margin: 0 auto;
+
+}
+
+.title {
+	@include pageTitle;
+}
+
+.overview {
+	padding: 0 1rem 1rem;
+	color: color(green, base);
+	font-size: 1.2rem;
+	font-weight: 400;
+	white-space: pre-wrap;
+	word-break: keep-all;
+	animation: FadeIn 1s linear;
+}
+
+.subjectTitle {
+	color: black;
+	padding: 1rem 1rem 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	white-space: pre-wrap;
+	word-break: keep-all;
+}
+
+.subject {
+	list-style: disc;
+	padding: 0 2rem 0 2rem;
+
+	li {
+		font-size: 1rem;
+		line-height: 175%;
+		font-weight: 300;
+		color: black;
+	}
+
+	a {
+		color: color(green, base);
+		text-decoration: underline;
+	}
+}
+
+.highlight {
+	color: color(green, base);
+	font-weight: 700;
+}

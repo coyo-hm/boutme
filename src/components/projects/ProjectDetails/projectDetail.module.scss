@@ -1,0 +1,37 @@
+@import "@styles/palette";
+
+@mixin details {
+	li {
+		margin: 0 0 1rem;
+		color: white;
+	}
+}
+
+.blog {
+	@include details;
+
+	img {
+		margin: 0 0 0.5rem;
+	}
+}
+
+.coyoui {
+	@include details;
+}
+
+.kanbanBoard {
+	@include details;
+}
+
+.disboard {
+	@include details;
+}
+
+.highlight {
+	color: #ffd501;
+}
+
+.link {
+	text-decoration: underline;
+	color: color(green, "extreme-lighter");
+}

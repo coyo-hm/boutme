@@ -1,0 +1,65 @@
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	animation: #{$str};
+}
+
+@include keyframes(blink-effect) {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(FadeIn) {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	21.25% {
+		opacity: 1;
+	}
+	25% {
+		transform: translateY(0);
+	}
+}
+
+@mixin fadeInChildren($n, $start) {
+	@for $i from 1 through $n {
+		& *:nth-child(#{$i}) {
+			animation: FadeIn 1s * $i + $start ease-in-out;
+			-webkit-animation: FadeIn 1s * $i + $start ease-in-out;
+		}
+	}
+}
