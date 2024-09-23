@@ -1460,6 +1460,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/selector-resolve-nested@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@csstools/selector-resolve-nested@npm:2.0.0"
+  peerDependencies:
+    postcss-selector-parser: ^6.1.0
+  checksum: 10c0/10516fd1db5e0a3963063caa57d24eeb1d1f69fcb63f0b5aec5d7a44f8b36ff07b1eded3012e8a9b92fc1f484e1a5a9def0cf57d788aa7f944ee79877837cc77
+  languageName: node
+  linkType: hard
+
+"@csstools/selector-specificity@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@csstools/selector-specificity@npm:4.0.0"
+  peerDependencies:
+    postcss-selector-parser: ^6.1.0
+  checksum: 10c0/6f4d4ecfdcd37f950100de8ffe0b4c1b1cc8c004aab2c2ebaa5c3e2bca2412d15b17d4628435f47a62d2c56db41bcbf985cb9c69e74b89964d48e421e93e75ba
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -2476,6 +2494,7 @@ __metadata:
     next: "npm:14.1.2"
     next-intl: "npm:^3.19.1"
     postcss: "npm:^8"
+    postcss-nesting: "npm:^13.0.0"
     prettier: "npm:^3.2.5"
     react: "npm:^18"
     react-dom: "npm:^18"
@@ -5202,6 +5221,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-nesting@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "postcss-nesting@npm:13.0.0"
+  dependencies:
+    "@csstools/selector-resolve-nested": "npm:^2.0.0"
+    "@csstools/selector-specificity": "npm:^4.0.0"
+    postcss-selector-parser: "npm:^6.1.0"
+  peerDependencies:
+    postcss: ^8.4
+  checksum: 10c0/b82a3c7010f7c6097bd3f3fe6c03f3f3af9a63a58e255f120dadd506a0ea9444aeeaba994f2a3fa34fb26e666dc72032edf5786c5fbdade790b02ad07d91ef95
+  languageName: node
+  linkType: hard
+
 "postcss-selector-parser@npm:^6.0.11":
   version: 6.0.15
   resolution: "postcss-selector-parser@npm:6.0.15"
@@ -5209,6 +5241,16 @@ __metadata:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10c0/48b425d6cef497bcf6b7d136f6fd95cfca43026955e07ec9290d3c15457de3a862dbf251dd36f42c07a0d5b5ab6f31e41acefeff02528995a989b955505e440b
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^6.1.0":
+  version: 6.1.2
+  resolution: "postcss-selector-parser@npm:6.1.2"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10c0/523196a6bd8cf660bdf537ad95abd79e546d54180f9afb165a4ab3e651ac705d0f8b8ce6b3164fb9e3279ce482c5f751a69eb2d3a1e8eb0fd5e82294fb3ef13e
   languageName: node
   linkType: hard
 
