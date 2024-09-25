@@ -1,36 +1,36 @@
 @import "@styles/palette";
 
 .container {
-	width: 100%;
-	height: 100vh;
 	background-color: white;
-	overflow: hidden;
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .content {
-	height: 100%;
 	width: 100%;
+	height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;
-	//flex: none;
-	//flex-flow: column nowrap;
-	//scroll-behavior: smooth;
-	//scroll-snap-type: y mandatory;
-	//scroll-snap-points-y: repeat(100vh);
 
 	&::-webkit-scrollbar {
 		width: 10px;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background: rgb(255, 255, 255, 0.8);
+		background: color(green, base);
 		border-radius: 10px;
 	}
 
 	&::-webkit-scrollbar-track {
 		background: rgb(0, 0, 0, 0);
 	}
+
+	//flex: none;
+	//flex-flow: column nowrap;
+	//scroll-behavior: smooth;
+	//scroll-snap-type: y mandatory;
+	//scroll-snap-points-y: repeat(100vh);
 }
 
 .cursor {
@@ -45,4 +45,3 @@
 	mix-blend-mode: difference;
 	transition: all 0.01s ease;
 }
-
