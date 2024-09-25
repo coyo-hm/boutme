@@ -16,11 +16,11 @@ const Container = ({ children }: Props) => {
 		const cursor = cursorRef.current as HTMLDivElement;
 
 		if (pathname === LINKS[0].url) {
-			cursor.style.display = "none"
+			cursor.style.display = "none";
 			return;
 		}
 
-		cursor.style.display = "block"
+		cursor.style.display = "block";
 
 		const linkEle = document.querySelectorAll("a");
 		const buttonEle = document.querySelectorAll("button");

@@ -28,6 +28,7 @@
       "@commonComponents/*": ["./src/components/common/*"],
       "@components/*": ["./src/components/*"],
       "@constants/*": ["./src/constants/*"],
+      "@hooks/*": ["./src/hooks/*"],
       "@i18n/*": ["./src/i18n/*"],
       "@styles/*": ["./src/styles/*"],
       "@src/*": ["./src/*"]

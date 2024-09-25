@@ -16,7 +16,7 @@ const FallingText = ({ text, highlightTexts = [] }: Props) => {
 	const requestRef = useRef<any>();
 
 	const animate = () => {
-		const { Engine, Bodies, Composite, MouseConstraint } = Matter;
+		const { Engine, Bodies, Composite, Mouse, MouseConstraint } = Matter;
 		const container = containerRef.current as HTMLDivElement;
 
 		const canvasSize = {
@@ -61,8 +61,10 @@ const FallingText = ({ text, highlightTexts = [] }: Props) => {
 				}
 			};
 		});
+		const mouse = Mouse.create(container);
 
 		const mouseConstraint = MouseConstraint.create(engine, {
+			mouse: mouse,
 			constraint: {
 				stiffness: 0.2,
 				render: {
