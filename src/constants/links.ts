@@ -3,8 +3,8 @@ const LINKS = [
 	{ label: "overview", url: "/overview" },
 	{ label: "skills", url: "/skills" },
 	// { label: "activities & careers", url: "/activities" },
-	{ label: "activities", url: "/activities" },
 	{ label: "projects", url: "/projects" },
+	{ label: "activities", url: "/activities" },
 ];
 
 export default LINKS;

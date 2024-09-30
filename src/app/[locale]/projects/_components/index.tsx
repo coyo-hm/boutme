@@ -4,10 +4,10 @@ import styles from "./projects.module.scss";
 
 import LogoCOYOLOG from "@projects/coyo-log.svg";
 import ImgCOYOLOG from "@projects/coyo-log-sample.png";
-import ImgBoard from "@projects/board-card-dnd.gif";
+import ImgBoard from "@projects/kanbanBoard-sample.gif";
 import ImgUI from "@projects/coyo-ui-sample.png";
 import LogoDisboard from "@projects/disboard.png";
-import ImgDisboard from "@projects/disboard-sample.png";
+import ImgDisboard from "@projects/disboard-chart-1.png";
 
 
 export default function Projects() {
