@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import styles from "./activeProject.module.scss";
 import { ProjectType } from "@constants/projects";
-import ProjectLink from "@components/projects/ProjectLink";
+import ProjectLink from "../ProjectLink";
 
 import IconCalender from "@icons/calender.svg";
 import IconPerson from "@icons/person.svg";

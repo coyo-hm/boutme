@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import styles from "./projectsCarousel.module.scss";
 import { ProjectType } from "@constants/projects";
-import ActiveProject from "@components/projects/ActiveProject";
+import ActiveProject from "../ActiveProject";
 
 const INTERVAL_TIME = 4000;
 

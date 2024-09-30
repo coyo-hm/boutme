@@ -1,7 +1,7 @@
 import styles from "./page.module.scss";
 import { SKILLS } from "@constants/skills";
-import Skill from "@components/skills/Skill";
-import Tools from "@components/skills/Skill/Tools";
+import Skill from "./_components/Skill";
+import Tools from "./_components/Skill/Tools";
 
 export default function SkillsPage() {
 	return (

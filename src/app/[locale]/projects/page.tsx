@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import ProjectsCarousel from "@components/projects/ProjectsCarousel";
+import ProjectsCarousel from "./_components/ProjectsCarousel";
 import PROJECTS from "@constants/projects";
 
 export default function ProjectsPage() {

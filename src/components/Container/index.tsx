@@ -2,7 +2,7 @@
 
 import { PropsWithChildren, useEffect, useRef } from "react";
 import styles from "./container.module.scss";
-import Sidebar from "@components/container/Sidebar";
+import Sidebar from "@components/Sidebar";
 import { usePathname } from "@i18n/routing";
 import LINKS from "@constants/links";
 

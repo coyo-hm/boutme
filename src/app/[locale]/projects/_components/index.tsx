@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProjectBox from "@components/projects/ProjectBox";
+import ProjectBox from "@src/app/[locale]/projects/_components/ProjectBox";
 import styles from "./projects.module.scss";
 
 import LogoCOYOLOG from "@projects/coyo-log.svg";

@@ -7,10 +7,10 @@ import ImgUI from "@projects/coyo-ui-sample.png";
 import ImgBoard from "@projects/board-card-dnd.gif";
 import LogoDisboard from "@projects/disboard.png";
 import ImgDisboard from "@projects/disboard-sample.png";
-import BlogDetail from "@components/projects/ProjectDetails/BlogDetail";
-import COYOUIDetail from "@components/projects/ProjectDetails/COYOUIDetail";
-import KanbanBoardDetail from "@components/projects/ProjectDetails/KanbanBoardDetail";
-import DisboardDetail from "@components/projects/ProjectDetails/DisboardDetail";
+import BlogDetail from "@src/app/[locale]/projects/_components/ProjectDetails/BlogDetail";
+import COYOUIDetail from "@src/app/[locale]/projects/_components/ProjectDetails/COYOUIDetail";
+import KanbanBoardDetail from "@src/app/[locale]/projects/_components/ProjectDetails/KanbanBoardDetail";
+import DisboardDetail from "@src/app/[locale]/projects/_components/ProjectDetails/DisboardDetail";
 
 export type ProjectLinkType = {
 	type: "home" | "git" | "npm" | "storybook" | "notion" | "etc";
