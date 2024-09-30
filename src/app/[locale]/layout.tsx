@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 // import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { getMessages } from "next-intl/server";
 // import { routing } from "@i18n/routing";
-import Container from "@components/container";
+import Container from "@components/Container";
 
 export default async function LocaleLayout({
 	children,

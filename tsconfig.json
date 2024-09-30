@@ -25,7 +25,6 @@
       "@projects/*": ["./public/assets/projects/*"],
       "@assets/*": ["./public/assets/*"],
       "@public/*": ["./public/*"],
-      "@commonComponents/*": ["./src/components/common/*"],
       "@components/*": ["./src/components/*"],
       "@constants/*": ["./src/constants/*"],
       "@hooks/*": ["./src/hooks/*"],

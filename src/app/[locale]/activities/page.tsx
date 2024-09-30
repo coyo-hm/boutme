@@ -1,7 +1,7 @@
 import styles from "./page.module.scss";
 
 // import Careers from "@components/activities/Careers";
-import Activities from "@components/activities/Activities";
+import Activities from "./_components/Activities";
 
 export default function ActivitiesCareersPage() {
 	return (

@@ -1,6 +1,6 @@
 import styles from "./activities.module.scss";
 import ACTIVITIES from "@constants/activities";
-import Activity from "@components/activities/Activity";
+import Activity from "../Activity";
 
 const Activities = () => {
 	return (
