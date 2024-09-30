@@ -4,9 +4,10 @@ import { ReactNode } from "react";
 import LogoCOYOLOG from "@projects/coyo-log.svg";
 import ImgCOYOLOG from "@projects/coyo-log-sample.png";
 import ImgUI from "@projects/coyo-ui-sample.png";
-import ImgBoard from "@projects/board-card-dnd.gif";
+import ImgBoard from "@projects/kanbanBoard-sample.gif";
 import LogoDisboard from "@projects/disboard.png";
 import ImgDisboard from "@projects/disboard-sample.png";
+
 import BlogDetail from "@src/app/[locale]/projects/_components/ProjectDetails/BlogDetail";
 import COYOUIDetail from "@src/app/[locale]/projects/_components/ProjectDetails/COYOUIDetail";
 import KanbanBoardDetail from "@src/app/[locale]/projects/_components/ProjectDetails/KanbanBoardDetail";
@@ -89,7 +90,6 @@ export const PROJECTS: ProjectType[] = [
 			}
 		],
 		details: <COYOUIDetail />,
-
 		sample: ImgUI
 	},
 	{

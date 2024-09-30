@@ -1,14 +1,29 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import styles from "./projectDetail.module.scss";
+
+import ImgTheme from "@projects/kanbanBoard-theme.gif";
+import ImgColor from "@projects/kanbanBoard-color.gif";
 
 const KanbanBoardDetail = () => {
 	const t = useTranslations("projectsPage.kanbanBoard");
 
+	const highlightText = (key: string) =>
+		t.rich(key, {
+			highlight: chunks => <span className={styles.highlight}>{chunks}</span>
+		});
+
 	return (
 		<ul className={styles.kanbanBoard}>
-			{["detail1", "detail2", "detail3"].map(key => (
-				<li key={key}>{t(key)}</li>
-			))}
+			<li>{highlightText("detail1")}</li>
+			<li>
+				<Image src={ImgTheme} alt={"kanbanBoard-theme"} unoptimized />
+				{highlightText("detail2")}
+			</li>
+			<li>
+				<Image src={ImgColor} alt={"kanbanBoard-color"} unoptimized />
+				{t("detail3")}
+			</li>
 		</ul>
 	);
 };

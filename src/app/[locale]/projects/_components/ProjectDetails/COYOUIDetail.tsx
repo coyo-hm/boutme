@@ -1,5 +1,9 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import styles from "./projectDetail.module.scss";
+
+import ImgMarquee from "@projects/coyo-ui-marquee.gif";
+
 
 const COYOUIDetail = () => {
 	const t = useTranslations("projectsPage.coyoui");
@@ -9,8 +13,13 @@ const COYOUIDetail = () => {
 		});
 	return (
 		<ul className={styles.coyoui}>
-			<li>{highlightText("detail1")}</li>
-			<li>{t("detail2")}</li>
+			{["detail1", "detail2"].map(key => (
+				<li key={key}>{highlightText(key)}</li>
+			))}
+			<li>
+				<Image src={ImgMarquee} alt={"coyo-ui-marquee"} unoptimized />
+				{t("detail3")}
+			</li>
 		</ul>
 	);
 };
