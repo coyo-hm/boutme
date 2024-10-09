@@ -5,7 +5,7 @@ import INFO from "@constants/info";
 import FallingText from "./_components/FallingText";
 
 const TEXT =
-	"Web developer with over 2 years of experience, skills I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. overview activities projects";
+	"Web developer with over 2 years of experience, skills I have a background in startups. I've been responsible for the web front end from initial design to post-deployment. overview projects";
 
 export default function MainPage() {
 	const locale = useLocale()
