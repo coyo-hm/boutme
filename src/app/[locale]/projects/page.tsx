@@ -1,6 +1,11 @@
+import {Metadata} from "next";
 import styles from "./page.module.scss";
 import ProjectsCarousel from "./_components/ProjectsCarousel";
 import PROJECTS from "@constants/projects";
+
+export const metadata: Metadata = {
+    title: "projects"
+};
 
 export default function ProjectsPage() {
 	return (

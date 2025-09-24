@@ -1,7 +1,12 @@
+import {Metadata} from "next";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import styles from "./page.module.scss";
 import INFO from "@constants/info";
+
+export const metadata: Metadata = {
+    title: "overview"
+};
 
 export default function OverviewPage() {
 	const t = useTranslations("overviewPage");

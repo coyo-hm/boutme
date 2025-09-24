@@ -1,7 +1,12 @@
+import { Metadata } from "next";
 import styles from "./page.module.scss";
 import { SKILLS } from "@constants/skills";
 import Skill from "./_components/Skill";
 import Tools from "./_components/Skill/Tools";
+
+export const metadata: Metadata = {
+	title: "skills"
+};
 
 export default function SkillsPage() {
 	return (
@@ -11,7 +16,7 @@ export default function SkillsPage() {
 				{SKILLS.map(({ key, ...rest }, index) => (
 					<Skill key={key} {...rest} id={key} />
 				))}
-				<Tools/>
+				<Tools />
 			</div>
 		</section>
 	);
